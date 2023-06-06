@@ -312,7 +312,6 @@ button {
 }
 
 .error__text {
-  margin-bottom: 39px;
   font-family: "Manrope";
   font-weight: 400;
   font-size: 19px;
@@ -321,7 +320,9 @@ button {
 }
 
 .home {
+  margin-top: 39px;
   padding: 24px 64px;
+  display: inline-block;
   font-family: "Manrope";
   font-weight: 800;
   font-size: 14px;
