@@ -4,6 +4,7 @@
 .footer__container {
     display: flex;
     justify-content:space-around;
+    border-bottom: 1px $whiteColor;
 }
 .footer__logo {
     display: flex;
@@ -17,8 +18,32 @@
 .footer__logo__icon {
     margin-right: 17px;
 }
-.social__footer {
+.footer__social {
     display: flex;
     gap: 10px;
     align-items: center;
 }
+.footer__social__link {
+width: 53px;
+    height: 53px;
+    border: 2px solid $borderColor;
+    display: flex;
+        align-items: center;
+        justify-content: center;
+}
+// .footer-navigate {}
+
+// .footer-navigate__title {}
+
+// .footer-navigate__list {}
+
+// .list {}
+
+// .footer-navigate__link {}
+// .section-explore {}
+// .section-utility {}
+// .address-box {}
+// .address__list {}
+// .address__item {}
+// .address__link {}
+// .schedule {}
