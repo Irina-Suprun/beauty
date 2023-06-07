@@ -1,12 +1,22 @@
-.footer__main {
+.footer {
+    padding-top: 20px;
     background-color: $footerBgColor;
+        @include tablet {
+                padding-top: 60px;
+            }
+        
+            @include desktop {
+                padding-top: 60px;
+            }
 }
-.footer__container {
-    // margin-left: 360px;
-    //     margin-right: 360px;
-    display: flex;
-    justify-content:space-around;
+.social-box {
+    padding-bottom: 20px;
     border-bottom: 1px solid $whiteColor;
+        @include tablet {
+            padding-bottom: 50px;
+        display: flex;
+        justify-content: space-between;
+        }
 }
 .footer__logo {
     display: flex;
@@ -15,17 +25,19 @@
         font-weight: 700;
         font-size: 40px;
         line-height: 1.25;
+        letter-spacing: 0.02em;
     color: $whiteColor;
 }
-.footer__logo__icon {
+.footer__logo-icon {
     margin-right: 17px;
 }
 .footer__social {
     display: flex;
     gap: 10px;
     align-items: center;
+    justify-content: center;
 }
-.footer__social__link {
+.footer__social-link {
 width: 53px;
     height: 53px;
     border: 2px solid $borderColor;
@@ -34,17 +46,32 @@ width: 53px;
         justify-content: center;
 }
 .footer-navigate {
-    display: flex;
-    justify-content: space-around;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+        @include tablet {
+            display: flex;
+            justify-content: space-between;
+        }
+        @include desktop {
+            padding-top: 50px;
+                padding-bottom: 60px;
+        }
 }
 
 .footer-navigate__title {
-    margin-bottom: 20px;
+    margin-top: 20px;
     font-family: 'Playfair Display';
         font-weight: 700;
         font-size: 22px;
         line-height: 1.4;
         color: $whiteColor;
+            @include tablet {}
+                font-size: 18px;
+            @include desktop {
+                margin-bottom: 20px;
+                        font-size: 22px;
+            }
 }
 
 // .footer-navigate__list {}
@@ -52,34 +79,58 @@ width: 53px;
     font-family: 'Manrope';
         font-weight: 500;
         font-size: 17px;
-        line-height: 2;
+        line-height: 1;
         letter-spacing: -0.01em;
         color: $whiteColor;
+            @include tablet {
+                font-size: 14px;
+            }       
+            @include desktop {
+                font-size: 17px;
+            line-height: 2;
+            }
 }
-// .section-explore {}
-.section-explore__item {
-
-}
-// .section-utility {}
+// .box-explore {}
+// .section-explore__item {}
+// .box-utility {}
 // .address-box {}
-// .address__list {}
-// .address__item {}
+.address {
+    margin-left: auto;
+    margin-right: auto;
+}
 .address__text {
+display: flex;
+align-items: start;
     font-family: 'Manrope';
         font-weight: 700;
         font-size: 17px;
         line-height: 1.5;
         letter-spacing: -0.01em;
         color: $whiteColor;
+        @include tablet {
+                font-size: 14px;
+            }
+      @include desktop {
+     font-size: 17px;
+    }
 }
 .address__link {
+    display: flex;
+        align-items: start;
     font-family: 'Manrope';
     font-weight: 500;
     font-size: 17px;
     line-height: 1.5;
     letter-spacing: -0.01em;
 color: $whiteColor;
+@include tablet {
+        font-size: 14px;
+    }
+        @include desktop {
+            font-size: 17px;
+        }
 }
+
 // .schedule {}
 .schedule__item {
     font-family: 'Manrope';
@@ -88,6 +139,12 @@ color: $whiteColor;
         line-height: 2;
         letter-spacing: -0.01em;
         color: $whiteColor;
+        @include tablet {
+                font-size: 14px;
+            }
+        @include desktop {
+        font-size: 17px;
+        }
 }
 .copyright {
     display: flex;
