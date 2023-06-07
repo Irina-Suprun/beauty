@@ -329,4 +329,44 @@ button {
   line-height: 1.25;
   color: #FFFFFF;
   background-color: #7A9CA5;
+}
+
+.footer__main {
+  background-color: #1E2C30;
+}
+
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footer__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.25;
+  color: #FFFFFF;
+}
+
+.footer__logo__icon {
+  margin-right: 17px;
+}
+
+.social__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }/*# sourceMappingURL=main.css.map */

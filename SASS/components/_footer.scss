@@ -1,0 +1,24 @@
+.footer__main {
+    background-color: $footerBgColor;
+}
+.footer__container {
+    display: flex;
+    justify-content:space-around;
+}
+.footer__logo {
+    display: flex;
+    align-items: center;
+    font-family: 'Playfair Display';
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 1.25;
+    color: $whiteColor;
+}
+.footer__logo__icon {
+    margin-right: 17px;
+}
+.social__footer {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
