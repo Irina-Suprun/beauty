@@ -2,9 +2,11 @@
     background-color: $footerBgColor;
 }
 .footer__container {
+    // margin-left: 360px;
+    //     margin-right: 360px;
     display: flex;
     justify-content:space-around;
-    border-bottom: 1px $whiteColor;
+    border-bottom: 1px solid $whiteColor;
 }
 .footer__logo {
     display: flex;
@@ -31,19 +33,72 @@ width: 53px;
         align-items: center;
         justify-content: center;
 }
-// .footer-navigate {}
+.footer-navigate {
+    display: flex;
+    justify-content: space-around;
+}
 
-// .footer-navigate__title {}
+.footer-navigate__title {
+    margin-bottom: 20px;
+    font-family: 'Playfair Display';
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 1.4;
+        color: $whiteColor;
+}
 
 // .footer-navigate__list {}
-
-// .list {}
-
-// .footer-navigate__link {}
+.footer-navigate__link {
+    font-family: 'Manrope';
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 2;
+        letter-spacing: -0.01em;
+        color: $whiteColor;
+}
 // .section-explore {}
+.section-explore__item {
+
+}
 // .section-utility {}
 // .address-box {}
 // .address__list {}
 // .address__item {}
-// .address__link {}
+.address__text {
+    font-family: 'Manrope';
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 1.5;
+        letter-spacing: -0.01em;
+        color: $whiteColor;
+}
+.address__link {
+    font-family: 'Manrope';
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 1.5;
+    letter-spacing: -0.01em;
+color: $whiteColor;
+}
 // .schedule {}
+.schedule__item {
+    font-family: 'Manrope';
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 2;
+        letter-spacing: -0.01em;
+        color: $whiteColor;
+}
+.copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75px;
+font-family: 'Font Awesome 5 Free';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 2;
+    letter-spacing: -0.01em;
+    color: $whiteColor;
+    background-color: $copyrightColor;
+}
