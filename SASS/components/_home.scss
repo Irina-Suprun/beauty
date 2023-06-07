@@ -1,0 +1,53 @@
+.hero-home {
+    background-image: url(../images/Background1.jpg);
+    background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin: 0 auto;
+            height: auto;
+            width: 100%;
+}
+.greeting {
+    display: flex;
+    max-width: 165px;
+    @include tablet {
+        width: 100%;
+    }
+}
+.greeting__icon {
+    margin-right: 10px;
+    margin-top: 15px;
+}
+.greeting__text {
+        margin-top: 15px;
+    text-align: justify;
+    font-weight: 600;
+        font-size: 15px;
+        line-height: 1.55;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: $borderColor;
+        @include tablet {
+
+        }
+}
+.container .title {
+    margin-bottom: 15px;
+    max-width: 150px;
+    font-size: 30px;
+line-height: 1.15;
+letter-spacing: -0.01em;
+@include tablet {
+    margin-bottom: 30px;
+        font-size: 70px;
+        width: 100%;
+    }
+}
+.greeting-info {
+    max-width: 190px;
+    text-align: justify;
+}
+.container .button {
+    margin-left: 0;
+    margin-bottom: 10px;
+}

@@ -1,22 +1,21 @@
 // .header {
 
 // }
-.header__container {
-width: 100%;
-background-color: $whiteColor;
-padding: 20px 20px;
+.header__box {
+margin-top: 15px;
     @include tablet {
-        padding: 30px 30px;
             display: flex;
     }
     @include desktop {
         height: 125px;
-        margin: 0 auto;
-        padding: 38px 60px;
-            display: flex;
+        width: 100%;
+        padding-left: 60px;
+        padding-right: 60px;
+        margin-top: 0;
     }
 }
 .left-side {
+
     @include mobile {
         margin-bottom: 20px;
             padding-right: 10px;
@@ -25,15 +24,11 @@ padding: 20px 20px;
     }
    @include tablet {
        margin-bottom: 15px;
-       padding-right: 15px;
        display: block;
-       justify-content: space-between;
    }
    
-    @include desktopMax {
-            padding-right: 15px;
+    @include desktop {
             display: flex;
-            justify-content: space-between;
             align-items: center;
         margin-bottom: 0px;
     }
@@ -45,43 +40,44 @@ font-family: 'Playfair Display';
     font-weight: 700;
     font-size: 28px;
     line-height: 1.25;
-color: $logoTextColor;
+color: $titleColor;
+@include desktop {
+margin-right: 45px;
+    }
 }
 
 .logo__icon {
     margin-right: 12px;
 }
 .contact {
-    margin-left: 15px;
+margin-top: 15px;
+margin-bottom: 15px;
     display: flex;
-    align-items: center;
+    justify-content: center;
     font-family: 'Manrope';
     font-weight: 600;
     font-size: 14px;
     line-height: 1.22;
-    color: $logoTextColor;
+    color: $titleColor;
     @include tablet {
 font-size: 18px;
-margin-top: 15px;
+margin-top: 30px;
     }
         @include desktop {
-    font-size: 16px;
-        }
-        @include desktopMax {
-font-size: 18px;
-margin-top: 0px;
-        }
-}
+margin: 0;
+}}
 .contact__icon {
     margin-right: 12px;
 }
 .right-side {
     margin-left: auto;
         margin-right: 0px;
+        margin-bottom: 15px;
         @include desktop {
 display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 0;
         }
 }
 .main-nav {
@@ -97,11 +93,7 @@ align-items: center;
     @include mobile {
             gap: 30px;
         }
-    @include tablet {
-        gap: 30px;
-    }
-    @include desktop {
-        gap: 30px;
+    @include desktop {   
         margin-bottom: 0px;
     }
 }
@@ -114,7 +106,7 @@ align-items: center;
 }
 .right-side__section {
 display: flex;
-justify-content: space-between;
+justify-content: space-around;
 }
 .social {
     margin-left: 32px;
