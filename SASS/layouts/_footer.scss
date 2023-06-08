@@ -6,10 +6,12 @@
             }
 }
 .footer .container {
-    @include desktop {
-            padding-top: 0;
-            padding-bottom: 0;
-        }
+    padding-top: 0;
+        padding-bottom: 0;
+    // @include desktop {
+    //         padding-top: 0;
+    //         padding-bottom: 0;
+    //     }
 }
 .social-box {
     padding-bottom: 20px;
@@ -47,23 +49,38 @@ width: 53px;
         align-items: center;
         justify-content: center;
 }
-.footer-navigate {
+
+.navigation {
     padding-top: 15px;
     padding-bottom: 15px;
+    @include tablet {
+    display: flex;
+    justify-content: space-between;
+        }
+                @include desktop {
+                    padding-top: 50px;
+                    padding-bottom: 60px;
+                }
+}
+.footer-navigate {
+    justify-content: space-around;
     text-align: center;
+    display: flex;
+        gap: 30px;
+        @media screen and (max-width:767px) {
+            margin-bottom: 20px;
+        }
         @include tablet {
-            display: flex;
-            justify-content: space-between;
+        justify-content: space-between;
         }
         @include desktop {
-            padding-top: 50px;
-                padding-bottom: 60px;
+            gap: 150px;
         }
+        
 }
 
 .footer-navigate__title {
-    margin-top: 20px;
-    font-family: 'Playfair Display';
+    margin-bottom: 15px;
         font-weight: 700;
         font-size: 22px;
         line-height: 1.4;
@@ -71,12 +88,17 @@ width: 53px;
             @include tablet {}
                 font-size: 18px;
             @include desktop {
+                font-size: 22px;
                 margin-bottom: 20px;
-                        font-size: 22px;
             }
 }
 
-// .footer-navigate__list {}
+// .footer-navigate__list {
+  
+// }
+// .footer-navigate__item {
+   
+// }
 .footer-navigate__link {
     font-family: 'Manrope';
         font-weight: 500;
@@ -92,17 +114,23 @@ width: 53px;
             line-height: 2;
             }
 }
-// .box-explore {}
-// .section-explore__item {}
+// .box-explore {
+    
+// }
+
 // .box-utility {}
-// .address-box {}
+.address-box {
+    text-align: center;
+    @media screen and (max-width: 767px) {
+           margin-bottom: 20px;
+        }
+}
 .address {
     margin-left: auto;
     margin-right: auto;
 }
 .address__text {
 display: flex;
-    font-family: 'Manrope';
         font-weight: 700;
         font-size: 17px;
         line-height: 1.5;
@@ -118,7 +146,6 @@ display: flex;
 .address__link {
     display: flex;
         align-items: start;
-    font-family: 'Manrope';
     font-weight: 500;
     font-size: 17px;
     line-height: 1.5;
@@ -132,9 +159,13 @@ color: $whiteColor;
         }
 }
 
-// .schedule {}
+.schedule {
+    text-align: center;
+        @media screen and (max-width: 767px) {
+            margin-bottom: 20px;
+        }
+}
 .schedule__item {
-    font-family: 'Manrope';
         font-weight: 500;
         font-size: 17px;
         line-height: 2;

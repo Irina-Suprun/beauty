@@ -5,10 +5,10 @@
     }
 }
 .treatments__list {
-    
+    display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     @include tablet {
-display: flex;
-flex-wrap: wrap;
         justify-content: space-around;
     }
         @include desktop {
@@ -17,9 +17,7 @@ flex-wrap: wrap;
 }
 .treatments__item {
     margin-bottom: 15px;
-    @include tablet {
-        width: calc((100% - 30px) / 2);
-    }
+   
     @include desktop {
 margin-bottom: 0;
 width:auto;
