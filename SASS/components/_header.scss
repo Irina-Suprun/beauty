@@ -1,17 +1,23 @@
 // .header {
 
-// }
+//  }
 .header__box {
-margin-top: 15px;
+// width: 100%;
+    width: auto;
+    padding: 15px 15px;
+    @include mobile {
+            width: 480px;
+        }
     @include tablet {
+        width: auto;
             display: flex;
     }
     @include desktop {
         height: 125px;
-        width: 100%;
+        width: auto;
         padding-left: 60px;
         padding-right: 60px;
-        margin-top: 0;
+            margin: 0;
     }
 }
 .left-side {
@@ -23,14 +29,13 @@ margin-top: 15px;
             justify-content: space-between;
     }
    @include tablet {
-       margin-bottom: 15px;
+       margin-bottom: 0;
        display: block;
    }
    
     @include desktop {
             display: flex;
             align-items: center;
-        margin-bottom: 0px;
     }
 }
 .logo {
@@ -62,6 +67,7 @@ margin-bottom: 15px;
     @include tablet {
 font-size: 18px;
 margin-top: 30px;
+margin-bottom: 0;
     }
         @include desktop {
 margin: 0;
@@ -72,23 +78,18 @@ margin: 0;
 .right-side {
     margin-left: auto;
         margin-right: 0px;
-        margin-bottom: 15px;
         @include desktop {
 display: flex;
-    justify-content: space-between;
     align-items: center;
     margin-bottom: 0;
         }
 }
 .main-nav {
     display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .site-nav {
 display: flex;
-align-items: center;
-    gap: 15px;
+    gap: 10px;
     margin-bottom: 15px;
     @include mobile {
             gap: 30px;
@@ -106,15 +107,15 @@ align-items: center;
 }
 .right-side__section {
 display: flex;
-justify-content: space-around;
 }
 .social {
-    margin-left: 32px;
-    margin-right: 32px;
    display: flex;
 align-items: center;
 gap: 30px;
-
+@include desktop {
+        margin-left: 32px;
+        margin-right: 32px;
+    }
 }
 // .social__link {
 
@@ -132,7 +133,7 @@ gap: 30px;
         line-height: 1.25;
         color: $whiteColor;
         display: flex;
-        align-items: center;
+
 }
 .button__icon {
     margin-right: 12px;

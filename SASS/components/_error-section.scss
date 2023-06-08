@@ -1,21 +1,19 @@
-.error {
-    height: 1050px;
+
+.error-box {
+    height: auto;
+    width: 100%;
     background-color: pink;
     background-image: url(../images/Photo-min.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.error__contain {
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 333px;
-    max-width: 563px;
     text-align: center;
+    @include desktop {
+            padding-top: 335px;
+            padding-bottom: 335px;
+        }
 }
 
-.error__item {
-    display: block;
+.error__icon {
     margin-left: auto;
     margin-right: auto;
 }
@@ -23,7 +21,6 @@
 .error__title {
     margin-top: 39px;
     margin-bottom: 16px;
-    font-family: 'Playfair Display';
     font-weight: 700;
     font-size: 40px;
     line-height: 1.3;
@@ -31,18 +28,15 @@
 }
 
 .error__text {
-    font-family: 'Manrope';
-    font-weight: 400;
-    font-size: 19px;
-    line-height: 1.6;
-    color: $primaryTextColor;
+    max-width: 570px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.home {
+.home-bottom {
     margin-top: 39px;
     padding: 24px 64px;
     display: inline-block;
-    font-family: 'Manrope';
     font-weight: 800;
     font-size: 14px;
     line-height: 1.25;
