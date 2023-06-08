@@ -233,7 +233,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   gap: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 @media screen and (min-width: 480px) {
   .site-nav {
@@ -607,6 +607,13 @@ body {
   margin: 0 auto;
   height: auto;
   width: 100%;
+  padding-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .hero-home {
+    padding-top: 235px;
+    padding-bottom: 235px;
+  }
 }
 
 .greeting {
@@ -617,7 +624,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .greeting {
-    width: 100%;
+    max-width: 600px;
   }
 }
 
@@ -636,6 +643,12 @@ body {
   text-transform: uppercase;
   color: #5C8692;
 }
+@media screen and (min-width: 1200px) {
+  .greeting__text {
+    text-align: left;
+  }
+}
+
 .container .title {
   margin-bottom: 15px;
   max-width: 150px;
@@ -645,18 +658,46 @@ body {
 }
 @media screen and (min-width: 768px) {
   .container .title {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     font-size: 70px;
-    width: 100%;
+    max-width: 400px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container .title {
+    text-align: left;
+    max-width: 500px;
   }
 }
 
 .greeting-info {
   max-width: 190px;
   text-align: justify;
+  margin-bottom: 25px;
+}
+@media screen and (min-width: 768px) {
+  .greeting-info {
+    max-width: 350px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .greeting-info {
+    max-width: 500px;
+    text-align: left;
+  }
 }
 
 .container .button {
   margin-left: 0;
-  margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .container .button {
+    margin-right: auto;
+    margin-left: 80px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container .button {
+    margin-left: 0;
+  }
 }/*# sourceMappingURL=main.css.map */
