@@ -3,10 +3,11 @@
 @import "./utils/mixins";
 @import "./base/common";
 @import "./components/container";
-@import "./components/header";
-@import "./components/footer";
-@import "./components/hero-home";
-@import "./components/heroError";
-@import "./components/error-section";
+@import "./layouts/header";
+@import "./layouts/footer";
+@import "./layouts/hero-home";
+@import "./layouts/heroError";
+@import "./layouts/error-section";
+@import "./layouts/home-treatments";
 
-// @import "./layouts/";
+

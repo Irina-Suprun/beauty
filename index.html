@@ -19,12 +19,11 @@
     <link rel="stylesheet" href="./css/main.min.css"/>
 </head>
 <body>
-
-   <!-- Header -->
+    <!-- Header -->
     <header class="header">
 <div class="header__box">
     <div class="left-side">
-    <strong><a href="" class="logo link"> 
+    <strong><a href="./index.html" class="logo link"> 
         <svg class="logo__icon" width="33" height="33">
   <use href="./images/icons.svg#icon-Logo"></use>
 </svg> Beautyness </a></strong>
@@ -41,7 +40,7 @@ Call Us - (+22) 123-456-7890
     <nav class="main-nav">
         <ul class="site-nav list">
             <li>
-                <a href="./home.html" class="site-nav__link link">Home</a>
+                <a href="./index.html" class="site-nav__link link">Home</a>
             </li>
             <li>
                 <a href="" class="site-nav__link link">Pages</a>
@@ -94,28 +93,59 @@ RESERVATION
 
     <!-- MAIN -->
     <main>
-        <section class="hero hero-error">
-<div class="container">
-    <p class="hero__text">
-Page Not Found
-    </p>
-    <h1 class="title hero__title">
-404 Error Page
-    </h1>
+
+        <!-- hero -->
+        <section class="hero hero-home">
+            <div class="container">
+                <div class="greeting">
+<svg class="greeting__icon " width="22" height="21">
+  <use href="./images/icons.svg#icon-untitled"></use>
+</svg>
+<p class="greeting__text">Welcome to Beautyness!!!</p>
 </div>
+<h1 class="title greeting__title">Beauty is power a smile is its sword.</h1>
+<p class="greeting-info">There are many variation of passages are Ipsum available, majority have suffered alteration in some form.</p>
+ <button type="button" class="button greeting-button">
+Make a reservation
+    </button>
+            </div>
+        </section>
+
+        <!-- treatments -->
+<section class="treatments">
+    <div class="container">
+<ul class="treatments__list list">
+<li class="treatments__item">
+    <img src="./images/spa-min.jpg" alt="spa">
+    <div class="treatments__describe">
+        <h2 class="treatments__title title">Spa & Massage</h2>
+        <p class="treatments__text">If you are going to use a passage offer Lorem Ipsum, you need to be sure hidden in the middle of text.</p>
+        <a href="" class="treatments__button link">READ MORE</a>
+    </div>
+</li>
+<li class="treatments__item">
+    <img src="./images/hair-min.jpg" alt="spa">
+    <div class="treatments__describe">
+        <h2 class="treatments__title title">Hair & Beauty</h2>
+        <p>If you are going to use a passage offer Lorem Ipsum, you need to be sure hidden in the middle of text.</p>
+        <a href="" class="treatments__button link">READ MORE</a>
+    </div>
+</li>
+<li class="treatments__item">
+    <img src="./images/body-min.jpg" alt="spa">
+    <div class="treatments__describe">
+        <h2 class="treatments__title title">Body Treatments</h2>
+        <p>If you are going to use a passage offer Lorem Ipsum, you need to be sure hidden in the middle of text.</p>
+        <a href="" class="treatments__button link">READ MORE</a>
+    </div>
+</li>
+</ul>
+    </div>
 
 </section>
-<section class="error-box">
-<div class="container">
-<img src="./images/404.png" alt="404"  class="error__icon">
-<h2 class="error__title title">Page not Found!!!</h2>
-<p class="error__text">The page you are looking for doesn't exist. Please try searching for some other page, or return to the website's homepage to find what you're looking for.</p>
-<a href="./home.html" class="home-bottom link">BACK TO HOME</a>
-</div>
-</section>
-
     </main>
-   <!-- FOOTER -->
+
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
         <div class="social-box" >
@@ -193,7 +223,7 @@ Page Not Found
 </a>
         </li>
          <li>
-            <a href="" class="footer-navigate__link link">404 not found</a>
+            <a href="./error.html" class="footer-navigate__link link">404 not found</a>
         </li>
          <li>
             <a href="" class="footer-navigate__link link">Password protected

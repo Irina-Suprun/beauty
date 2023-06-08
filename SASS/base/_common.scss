@@ -29,7 +29,7 @@ font-family: 'Manrope';
 
 .title {
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     color: $titleColor;
     font-family: 'Playfair Display';
     font-size: 45px;
@@ -37,9 +37,9 @@ font-family: 'Manrope';
     letter-spacing: -0.01em;
     text-align: center;
 
-    // @include desktop {
-    //     font-size: 36px;
-    // }
+    @include desktop {
+        margin-bottom: 30px;
+        }
 }
 .hero {
     background-repeat: no-repeat;
