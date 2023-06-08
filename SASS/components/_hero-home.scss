@@ -1,17 +1,10 @@
-.hero-home {
-    background-image: url(../images/Background1.jpg);
-    background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        margin: 0 auto;
-            height: auto;
-            width: 100%;
-            padding-bottom: 20px;
-        @include desktop {
-            padding-top: 235px;
-            padding-bottom: 235px;
-        }
 
+.hero-home {
+background-image: url(../images/Background1.jpg);
+@include desktop {
+        padding-top: 235px;
+        padding-bottom: 235px;
+    }
 }
 .greeting {
     display: flex;
@@ -23,10 +16,8 @@
 }
 .greeting__icon {
     margin-right: 10px;
-    margin-top: 15px;
 }
 .greeting__text {
-        margin-top: 15px;
     text-align: justify;
     font-weight: 600;
         font-size: 15px;
@@ -38,7 +29,7 @@
     text-align: left;
         }
 }
-.container .title {
+.greeting__title {
     margin-bottom: 15px;
     max-width: 150px;
     font-size: 30px;
@@ -66,7 +57,7 @@ letter-spacing: -0.01em;
         text-align: left;
     }
 }
-.container .button {
+.greeting-button {
     margin-left: 0;
     @include tablet {
             margin-right: auto;

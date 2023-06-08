@@ -1,0 +1,51 @@
+.error {
+    height: 1050px;
+    background-color: pink;
+    background-image: url(../images/Photo-min.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.error__contain {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 333px;
+    max-width: 563px;
+    text-align: center;
+}
+
+.error__item {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.error__title {
+    margin-top: 39px;
+    margin-bottom: 16px;
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.3;
+    color: $titleColor;
+}
+
+.error__text {
+    font-family: 'Manrope';
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 1.6;
+    color: $primaryTextColor;
+}
+
+.home {
+    margin-top: 39px;
+    padding: 24px 64px;
+    display: inline-block;
+    font-family: 'Manrope';
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 1.25;
+    color: $whiteColor;
+    background-color: $btBgColor;
+}

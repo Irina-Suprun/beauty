@@ -1,71 +1,25 @@
-// .hero {
-  
-// }
-.banner {
-    padding: 130px 0;
-    height: 350px;
+.hero-error {
 background-color: $heroBgColor;
 background-image: url(../images/Background.jpg);
 text-align: center;
+@include desktop {
+        padding-top: 130px;
+        padding-bottom: 130px;
+    }
 }
 .hero__text {
     margin-bottom: 10px;
-font-family: 'Manrope';
     font-weight: 600;
     font-size: 15px;
     line-height: 1.53;
     color: $whiteColor;
 }
 .hero__title {
-font-family: 'Playfair Display';
-    font-weight: 700;
-    font-size: 55px;
-    line-height: 1.2;
-    color: $whiteColor;
-}
-.error {
-height: 1050px;
-background-color: pink;
-background-image: url(../images/Photo-min.jpg); 
-background-repeat: no-repeat;
-background-size: cover;
-}
-.error__contain {
     margin-left: auto;
     margin-right: auto;
-padding-top: 333px;
-max-width: 563px;
-text-align: center;
-}
-.error__item {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-.error__title {
-    margin-top: 39px;
-    margin-bottom: 16px;
-font-family: 'Playfair Display';
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 1.3;
-    color: $titleColor;
-}
-.error__text {
-font-family: 'Manrope';
-    font-weight: 400;
-    font-size: 19px;
-    line-height: 1.6;
-    color: $primaryTextColor;
-}
-.home {
-        margin-top: 39px;
-    padding: 24px 64px;
-    display:inline-block;
-font-family: 'Manrope';
-    font-weight: 800;
-    font-size: 14px;
-    line-height: 1.25;
+    line-height: 1.2;
     color: $whiteColor;
-    background-color: $btBgColor;
+    @include desktop {
+            font-size: 55px;
+        }
 }
