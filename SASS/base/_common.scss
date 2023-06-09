@@ -41,6 +41,14 @@ font-family: 'Manrope';
         margin-bottom: 30px;
         }
 }
+.title-less {
+    font-family: 'Playfair Display';
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 1.2;
+        // text-align: center;
+        color: $titleColor;
+}
 .hero {
     background-repeat: no-repeat;
     background-position: center;

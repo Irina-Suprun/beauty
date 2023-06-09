@@ -1,0 +1,65 @@
+.about {
+    background-color: $sectionBgColor;
+@include desktop {
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+}
+.about__box {
+    @include desktop {
+            display: flex;
+            gap: 125px;
+        }
+}
+.about__text {
+    text-align: justify;
+    @include desktop {
+    text-align: left;
+    padding-top: 27px;
+    padding-bottom: 27px;
+        }
+}
+.text-aboutAs {
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 1.55%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $borderColor;
+}
+
+.about__list {
+    margin-top: 37px;
+    margin-bottom: 20px;
+    display: flex;
+            gap: 10px;
+    @include mobile {
+
+    }
+
+}
+.about__item {
+    background-color: $whiteColor;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 1px solid $footerBgColor;
+}
+.about__icons {
+    text-align: center;
+}
+.about__text .title {
+    @include desktop {
+        text-align: left;
+    }
+   
+}
+.about__picture {
+    @include tablet {
+margin-left: auto;
+margin-right: auto;
+            }
+    @include desktop {
+// margin-left: auto;
+}
+}
