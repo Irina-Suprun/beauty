@@ -6,9 +6,11 @@
     }
 }
 .about__box {
+
     @include desktop {
             display: flex;
             gap: 125px;
+
         }
 }
 .about__text {
@@ -46,12 +48,32 @@
     }
    
 }
-.about__picture {
-    @include tablet {
-margin-left: auto;
-margin-right: auto;
-            }
+.bg-photo {
+@include tablet {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     @include desktop {
-// margin-left: auto;
+      height: 576px;
+
+    }
 }
+.about__photo {
+    position: relative;
+
+}
+.about__picture {
+    box-shadow: $shadowAbout;
+    position: absolute;
+    @include tablet {
+left: 119px;
+    }
+    @include desktop {
+    top: -536px;
+    left: 660px;
+    }
+
+
+ 
 }

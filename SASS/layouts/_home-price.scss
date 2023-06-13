@@ -17,6 +17,7 @@
 }
 
 .price__picture {
+    box-shadow: $priceShadow;
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         margin: 0 auto;}
     @include desktop {
@@ -42,16 +43,20 @@ padding-top: 30px;
         color: $primaryTextColor;
 }
 
-.price__text {}
+// .price__text {}
 
 .box-square {
+    @include desktop {
 position: relative;
+    }
 }
 .figure-square {
-position: absolute;
-top: -90px;
-left: 511px;
-z-index: -1;
+    @include desktop {
+        position: absolute;
+            top: -90px;
+            left: 511px;
+            z-index: -1;
+    }
 }
 
 .price__box {
