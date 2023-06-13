@@ -627,12 +627,59 @@ body {
 }
 
 .hero-home {
-  background-image: url(../images/Background1.jpg);
+  text-align: center;
+  background-color: #343B40;
 }
 @media screen and (min-width: 1200px) {
   .hero-home {
-    padding-top: 235px;
-    padding-bottom: 235px;
+    background-color: #EBF3F5;
+    padding-top: 135px;
+    padding-bottom: 135px;
+    position: relative;
+    height: 925px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .hero-bg {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-bg {
+    width: auto;
+    height: 925px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .hero-position {
+    background-color: #EBF3F5;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero-position {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-position {
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__content {
+    padding-top: 70px;
+    max-width: 510px;
   }
 }
 
@@ -640,12 +687,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 165px;
-}
-@media screen and (min-width: 768px) {
-  .greeting {
-    max-width: 600px;
-  }
 }
 
 .greeting__icon {
@@ -669,7 +710,6 @@ body {
 
 .greeting__title {
   margin-bottom: 15px;
-  max-width: 150px;
   font-size: 30px;
   line-height: 1.15;
   letter-spacing: -0.01em;
@@ -677,46 +717,58 @@ body {
 @media screen and (min-width: 768px) {
   .greeting__title {
     margin-bottom: 25px;
-    font-size: 70px;
-    max-width: 400px;
   }
 }
 @media screen and (min-width: 1200px) {
   .greeting__title {
+    font-size: 70px;
     text-align: left;
-    max-width: 500px;
   }
 }
 
 .greeting-info {
-  max-width: 190px;
   text-align: justify;
   margin-bottom: 25px;
 }
-@media screen and (min-width: 768px) {
-  .greeting-info {
-    max-width: 350px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .greeting-info {
-    max-width: 500px;
     text-align: left;
   }
 }
 
 .greeting-button {
-  margin-left: 0;
+  margin-right: auto;
+  margin-left: auto;
 }
 @media screen and (min-width: 768px) {
   .greeting-button {
-    margin-right: auto;
     margin-left: 80px;
   }
 }
 @media screen and (min-width: 1200px) {
   .greeting-button {
     margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero__photo {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__photo {
+    width: 50%;
+    height: 50%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__photo {
+    position: absolute;
+    right: 90px;
+    top: 56px;
+    width: 550px;
+    height: 545px;
   }
 }
 

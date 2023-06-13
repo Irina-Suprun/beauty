@@ -1,18 +1,49 @@
 
 .hero-home {
-background-image: url(../images/Background1.jpg);
+    text-align: center;
+background-color: $heroMobileBgColor;
+
 @include desktop {
-        padding-top: 235px;
-        padding-bottom: 235px;
+    background-color: $sectionBgColor;
+        padding-top: 135px;
+        padding-bottom: 135px;
+        position: relative;
+            height: 925px;
+    }
+}
+.hero-bg {
+@media screen and (max-width: 1199px) {
+        display: none;
+    }
+    @include desktop {
+        width: auto;
+height: 925px;
+position: absolute;
+    top: 0;
+    left: 50%;
+    }
+
+}
+.hero-position {
+    @media screen and (max-width: 1199px) {
+    background-color: $sectionBgColor;
+    }
+        @include tablet {
+            display: flex;
+            align-items: center;
+        }
+        @include desktop {
+            position: relative;
+        }
+}
+.hero__content {
+    @include desktop {
+        padding-top: 70px;
+        max-width: 510px;
     }
 }
 .greeting {
     display: flex;
-    max-width: 165px;
-    @include tablet {
-    max-width: 600px;
-    }
-
 }
 .greeting__icon {
     margin-right: 10px;
@@ -31,39 +62,51 @@ background-image: url(../images/Background1.jpg);
 }
 .greeting__title {
     margin-bottom: 15px;
-    max-width: 150px;
     font-size: 30px;
 line-height: 1.15;
 letter-spacing: -0.01em;
 @include tablet {
     margin-bottom: 25px;
-        font-size: 70px;
-        max-width: 400px;
+
     }
          @include desktop {
+            font-size: 70px;
              text-align: left;
-            max-width: 500px;
          }
 }
 .greeting-info {
-    max-width: 190px;
     text-align: justify;
     margin-bottom: 25px;
-    @include tablet {
-            max-width: 350px;
-        }
+    // @include tablet {
+    //     }
     @include desktop {
-        max-width: 500px;
         text-align: left;
     }
 }
 .greeting-button {
-    margin-left: 0;
+    margin-right: auto;
+    margin-left: auto;
     @include tablet {
-            margin-right: auto;
             margin-left: 80px;
         }
                 @include desktop {
                     margin-left: 0;
                 }
+}
+.hero__photo {
+    @media screen and (max-width: 767px) {
+            display: none;
+}
+@include tablet {
+width: 50%;
+    height: 50%;
+    
+}
+        @include desktop {
+            position: absolute;
+            right: 90px;
+            top: 56px;
+            width: 550px;
+            height: 545px;
+        }
 }
