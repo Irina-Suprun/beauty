@@ -765,7 +765,7 @@ body {
 @media screen and (min-width: 1200px) {
   .hero__photo {
     position: absolute;
-    right: 90px;
+    right: 120px;
     top: 56px;
     width: 550px;
     height: 545px;
@@ -924,8 +924,8 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .about {
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
 }
 
@@ -957,6 +957,14 @@ body {
   display: flex;
   gap: 10px;
 }
+@media screen and (min-width: 768px) {
+  .about__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .about__item {
   background-color: #FFFFFF;
   padding-top: 20px;
@@ -1102,4 +1110,86 @@ body {
     padding-top: 90px;
     padding-right: 67px;
   }
+}
+
+.reviews {
+  background-color: #EDF5F7;
+}
+@media screen and (min-width: 1200px) {
+  .reviews {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+
+.before-title--centre {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .reviews__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 36px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .reviews__item {
+    margin-bottom: 36px;
+  }
+}
+
+.reviews__text {
+  padding: 20px;
+  text-align: justify;
+  background-color: #FFFFFF;
+}
+@media screen and (min-width: 1200px) {
+  .reviews__text {
+    padding: 45px;
+  }
+}
+
+.reviews__customer {
+  padding: 20px;
+  background-color: #1E2C30;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media screen and (min-width: 1200px) {
+  .reviews__customer {
+    padding: 25px 44px 25px 44px;
+  }
+}
+
+.customer__name {
+  margin-left: 20px;
+}
+
+.stars-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.customer-title {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: -0.01em;
+  color: #FFFFFF;
+}
+
+.customer__country {
+  font-size: 14px;
+  color: #FFFFFF;
+}
+
+.reviews__icon {
+  margin-right: 0;
+  margin-left: auto;
 }/*# sourceMappingURL=main.css.map */
