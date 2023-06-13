@@ -38,8 +38,17 @@ font-family: 'Manrope';
     text-align: center;
 
     @include desktop {
-        margin-bottom: 30px;
+        margin-bottom: 40px;
         }
+}
+.before-title {
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 1.55%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $borderColor;
 }
 .title-less {
     font-family: 'Playfair Display';
@@ -58,4 +67,24 @@ font-family: 'Manrope';
     width: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
+}
+.button-link {
+margin-top: 10px;
+    padding: 18px 43px;
+    display: inline-block;
+    background-color: $whiteColor;
+    border: 2px solid $borderColor;
+
+    font-family: 'Manrope';
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 1.25;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: $titleColor;
+    
+
+    @include tablet {
+        margin-top: 30px;
+    }
 }

@@ -3,6 +3,7 @@
 @import "./utils/mixins";
 @import "./base/common";
 @import "./components/container";
+@import "./components/hidden";
 @import "./layouts/header";
 @import "./layouts/footer";
 @import "./layouts/hero-home";
@@ -10,5 +11,6 @@
 @import "./layouts/error-section";
 @import "./layouts/home-treatments";
 @import "./layouts/home-about";
+@import "./layouts/home-price";
 
 

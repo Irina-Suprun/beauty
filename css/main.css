@@ -64,8 +64,18 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .title {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
+}
+
+.before-title {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1.55%;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #5C8692;
 }
 
 .title-less {
@@ -87,10 +97,36 @@ body {
   padding-bottom: 20px;
 }
 
+.button-link {
+  margin-top: 10px;
+  padding: 18px 43px;
+  display: inline-block;
+  background-color: #FFFFFF;
+  border: 2px solid #5C8692;
+  font-family: "Manrope";
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 1.25;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #141414;
+}
+@media screen and (min-width: 768px) {
+  .button-link {
+    margin-top: 30px;
+  }
+}
+
 .container {
   width: 100%;
   margin: 0 auto;
-  padding: 30px 15px;
+  padding: 30px 0px;
+}
+@media screen and (max-width: 1199px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -105,6 +141,22 @@ body {
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+            clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
   }
 }
 
@@ -815,19 +867,6 @@ body {
   }
 }
 
-.treatments__button {
-  margin-top: 10px;
-  padding: 18px 43px;
-  display: inline-block;
-  background-color: #FFFFFF;
-  border: 2px solid #5C8692;
-}
-@media screen and (min-width: 768px) {
-  .treatments__button {
-    margin-top: 30px;
-  }
-}
-
 .about {
   background-color: #EBF3F5;
 }
@@ -856,16 +895,6 @@ body {
     padding-top: 27px;
     padding-bottom: 27px;
   }
-}
-
-.text-aboutAs {
-  margin-bottom: 10px;
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 1.55%;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #5C8692;
 }
 
 .about__list {
@@ -897,5 +926,93 @@ body {
   .about__picture {
     margin-left: auto;
     margin-right: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .price {
+    padding-top: 145px;
+    padding-bottom: 145px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .price__section {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .price__section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .price__picture {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .price__picture {
+    margin: 0;
+  }
+}
+
+.price__list {
+  padding-top: 30px;
+}
+
+.price__item {
+  padding-top: 18px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid #9BB7BF;
+}
+
+.text-span {
+  font-family: "Manrope";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.65;
+  color: #555555;
+}
+
+.box-square {
+  position: relative;
+}
+
+.figure-square {
+  position: absolute;
+  top: -90px;
+  left: 511px;
+  z-index: -1;
+}
+
+@media screen and (min-width: 1200px) {
+  .price__box {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .price__box .button-link {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .padding-box-right {
+    padding-left: 67px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .padding-box-left {
+    padding-top: 90px;
+    padding-right: 67px;
   }
 }/*# sourceMappingURL=main.css.map */

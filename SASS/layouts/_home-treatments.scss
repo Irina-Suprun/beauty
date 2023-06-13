@@ -48,14 +48,3 @@ max-width: 327px;
 
      
 // }
-.treatments__button {
-    margin-top: 10px;
-    padding: 18px 43px;
-    display: inline-block;
-    background-color: $whiteColor;
-    border: 2px solid $borderColor;
-
-    @include tablet {
-            margin-top: 30px;
-        }
-}
