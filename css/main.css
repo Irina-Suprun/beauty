@@ -1192,4 +1192,24 @@ body {
 .reviews__icon {
   margin-right: 0;
   margin-left: auto;
+}
+
+.benefits {
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .benefits {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+
+.benefits__picture {
+  width: 80px;
+  height: 80px;
+  background-color: #5C8692;
+}
+
+.benefits__icons {
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */

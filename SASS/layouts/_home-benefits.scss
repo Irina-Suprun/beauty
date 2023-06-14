@@ -1,0 +1,20 @@
+.benefits {
+    text-align: center;
+    @include desktop {
+            padding-top: 120px;
+            padding-bottom: 120px;
+        }
+}
+
+// .benefits__list {
+
+// }
+.benefits__picture {
+width: 80px;
+height: 80px;
+background-color: $borderColor;
+// text-align: center;
+}
+.benefits__icons {
+text-align: center;
+}
