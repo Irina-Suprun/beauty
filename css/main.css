@@ -69,7 +69,8 @@ body {
 }
 
 .before-title {
-  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-weight: 600;
   font-size: 15px;
   line-height: 1.55%;
@@ -1204,12 +1205,61 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .benefits__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    row-gap: 35px;
+  }
+}
+
+.benefits__items {
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .benefits__items {
+    max-width: 350px;
+    text-align: start;
+  }
+}
+
 .benefits__picture {
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 80px;
   height: 80px;
   background-color: #5C8692;
 }
+@media screen and (min-width: 768px) {
+  .benefits__picture {
+    margin: 0;
+    margin-bottom: 25px;
+  }
+}
 
 .benefits__icons {
   text-align: center;
+}
+
+.benefits__items .title-less {
+  font-size: 26px;
 }/*# sourceMappingURL=main.css.map */
