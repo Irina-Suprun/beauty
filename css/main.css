@@ -1262,4 +1262,47 @@ body {
 
 .benefits__items .title-less {
   font-size: 26px;
+}
+
+.discount {
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .discount {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+
+.discount-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.discount-box__list {
+  padding: 18px 40px;
+}
+
+.discount-box__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: start;
+}
+
+.discount__icons {
+  margin-right: 20px;
+}
+
+.discount-box__right {
+  background-color: #1E2C30;
+  color: #FFFFFF;
+  font-weight: 800;
+}
+
+.discount-box__title {
+  font-size: 15px;
+  line-height: 1.73;
+  letter-spacing: 0.01em;
 }/*# sourceMappingURL=main.css.map */

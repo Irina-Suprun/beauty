@@ -1,0 +1,32 @@
+.discount {
+    text-align: center;
+
+    @include desktop {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+}
+.discount-box {
+    display: flex;
+}
+.discount-box__list {
+    padding: 18px 40px;
+}
+.discount-box__item {
+    display: flex;
+    text-align: start;
+}
+.discount__icons {
+    margin-right: 20px;
+}
+.discount-box__right {
+    background-color: $footerBgColor;
+    color: $whiteColor;
+    font-weight: 800;
+}
+
+.discount-box__title {
+    font-size: 15px;
+    line-height: 1.73;
+    letter-spacing: 0.01em;
+}
