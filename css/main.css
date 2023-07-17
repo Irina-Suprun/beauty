@@ -1216,9 +1216,9 @@ body {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     row-gap: 35px;
   }
 }
@@ -1274,6 +1274,47 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .discount-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.discount__left {
+  text-align: justify;
+}
+@media screen and (min-width: 768px) {
+  .discount__left {
+    width: 400px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .discount__left {
+    width: 535px;
+    margin-top: 80px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .discount__left .title {
+    text-align: start;
+  }
+}
+
+.discount__left .before-title {
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .discount__left .before-title {
+    text-align: justify;
+  }
+}
+
 .discount-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1283,11 +1324,23 @@ body {
           justify-content: center;
   margin-top: 35px;
 }
+@media screen and (min-width: 768px) {
+  .discount-box {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+}
 
 .discount-box__list {
   background-color: #FFFFFF;
-  padding: 18px 40px;
+  padding: 10px 10px;
   border: solid 1px #95BFCB;
+}
+@media screen and (min-width: 1200px) {
+  .discount-box__list {
+    padding: 18px 40px;
+  }
 }
 
 .discount-box__item {
@@ -1302,8 +1355,13 @@ body {
 }
 
 .discount__icons {
-  margin-right: 20px;
+  margin-right: 10px;
   margin-top: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .discount__icons {
+    margin-right: 20px;
+  }
 }
 
 .discount-box__contact {
@@ -1321,10 +1379,15 @@ body {
 }
 
 .discount-box__right {
-  padding: 18px 34px;
+  padding: 10px 10px;
   background-color: #1E2C30;
   color: #FFFFFF;
   font-weight: 800;
+}
+@media screen and (min-width: 1200px) {
+  .discount-box__right {
+    padding: 18px 40px;
+  }
 }
 
 .discount-box__title {
@@ -1343,10 +1406,22 @@ body {
 }
 
 .discount__registration {
+  margin-top: 30px;
   -webkit-box-shadow: 0px 20px 40px rgba(42, 68, 75, 0.2);
           box-shadow: 0px 20px 40px rgba(42, 68, 75, 0.2);
   background-color: #FFFFFF;
-  padding: 66px 75px;
+  padding: 30px;
+}
+@media screen and (min-width: 768px) {
+  .discount__registration {
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .discount__registration {
+    padding: 66px 75px;
+    width: 550px;
+  }
 }
 
 .field {
@@ -1396,4 +1471,15 @@ body {
   top: 23%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+.discount__form .button {
+  width: 100%;
+  height: 65px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }/*# sourceMappingURL=main.css.map */
