@@ -64,7 +64,7 @@ justify-content: center;
 
 }
 .about__picture {
-    box-shadow: $shadowAbout;
+    box-shadow: $shadow;
     position: absolute;
     @include tablet {
 left: 119px;

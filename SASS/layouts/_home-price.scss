@@ -17,7 +17,7 @@
 }
 
 .price__picture {
-    box-shadow: $priceShadow;
+    box-shadow: $shadow;
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         margin: 0 auto;}
     @include desktop {

@@ -1,5 +1,6 @@
 .discount {
-    text-align: center;
+    // text-align: center;
+    background-color: $sectionBgColor;
 
     @include desktop {
         padding-top: 120px;
@@ -8,25 +9,110 @@
 }
 .discount-box {
     display: flex;
+    justify-content: center;
+    margin-top: 35px;
 }
 .discount-box__list {
+    background-color: $whiteColor;
     padding: 18px 40px;
+            border: solid 1px $borderLine;
 }
 .discount-box__item {
     display: flex;
     text-align: start;
 }
+.discount-box__item:first-child {
+    margin-bottom: 18px;
+}
 .discount__icons {
     margin-right: 20px;
+    margin-top: 10px;
+}
+.discount-box__contact {
+    color: $titleColor;
+    font-weight: 500;
+        font-size: 15px;
+        letter-spacing: 0;
+}
+.discount-box__contact-accent {
+    font-weight: 800;
+    font-size: 14px;
+    letter-spacing: 0.08em;
+    line-height: 1.5;
+
 }
 .discount-box__right {
+    padding: 18px 34px;
     background-color: $footerBgColor;
     color: $whiteColor;
     font-weight: 800;
 }
 
 .discount-box__title {
+    font-weight: 800;
     font-size: 15px;
     line-height: 1.73;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.1em;
 }
+.discount-box__icons {
+    margin: 8px auto ;
+}
+.discount-box_text{
+    letter-spacing: 0.02em;
+}
+.discount__registration {
+    box-shadow: $shadow;
+    background-color: $whiteColor;
+    padding: 66px 75px;
+}
+
+ .discount__form {}
+
+ .field {
+    margin-bottom: 15px;
+    position: relative;
+ }
+
+ .field__title {
+  
+ }
+
+ .field__input {
+    padding-left: 54px;
+        width: 100%;
+        height: 65px;
+        border: 1px solid $borderColor;
+    font-family: 'Manrope';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.6;
+        letter-spacing: 0;
+        color: $primaryTextColor;
+ }
+
+ .field__icon {
+    position: absolute;
+        left: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+ }
+ .field__textarea {
+    padding-left: 54px;
+    padding-top: 18px;
+        width: 100%;
+        height: 135px;
+        border: 1px solid $borderColor;
+        resize: none;
+        font-family: 'Manrope';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.6;
+        letter-spacing: 0;
+        color: $primaryTextColor;
+ }
+ .field__icon-textarea {
+    position: absolute;
+        left: 15px;
+        top: 23%;
+        transform: translateY(-50%);
+ }

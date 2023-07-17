@@ -464,14 +464,92 @@ Make a reservation
             </ul>
             <div class="discount-box__right">
                 <h3 class="discount-box__title">- Get Flat -</h3>
-                <svg width="98" height="49" class="discount__icons">
+                <svg width="98" height="49" class="discount-box__icons">
                         <use href="./images/icons.svg#icon-50"></use>
                     </svg>
                     <p class="discount-box_text">Discount</p>
             </div>
         </div>
     </div>
-    <div class="discount__right">
+
+    <div class="discount__registration">
+<form class="discount__form">
+    <div class="field">
+        <label for="user-name" class="field__title"></label>
+        <input
+                type="text"
+                name="user-name"
+                id="user-name"
+                class="field__input"
+                placeholder="Name"
+                required
+              />
+        <svg width="24" height="24" class="field__icon">
+                        <use href="./images/icons.svg#icon-name"></use>
+                    </svg>
+
+    </div>
+     <div class="field">
+        <label for="email" class="field__title"></label>
+        <input
+                type="email"
+                name="email"
+                id="email"
+                class="field__input"
+                placeholder="Email"
+                required
+              />
+        <svg width="24" height="24" class="field__icon">
+                        <use href="./images/icons.svg#icon-mail"></use>
+                    </svg>
+
+    </div>
+
+     <div class="field">
+        <label for="user-tel" class="field__title"></label>
+        <input
+                type="tel"
+                name="user-tel"
+                id="user-tel"
+                class="field__input"
+                placeholder="Phone"
+                required
+              />
+        <svg width="24" height="24" class="field__icon">
+                        <use href="./images/icons.svg#icon-phone"></use>
+                    </svg>
+
+    </div>
+
+     <div class="field">
+        <label for="service" class="field__title"></label>
+        <input
+                type="text"
+                name="service"
+                id="service"
+                class="field__input"
+                placeholder="Service You Need"
+                required
+              />
+        <svg width="24" height="24" class="field__icon">
+                        <use href="./images/icons.svg#icon-book-open"></use>
+                    </svg>
+    </div>
+
+     <div class="field">
+        <label for="edit" class="field__title"></label>
+        <textarea name="edit" id="edit" class="field__textarea" placeholder="Any Note For Us"></textarea>
+        
+        <svg width="24" height="24" class="field__icon-textarea">
+                        <use href="./images/icons.svg#icon-edit"></use>
+                    </svg>
+
+    </div>
+    <button type="submit" class="button">GET AN APPOINTMENT</button>
+
+    </button>
+
+</form>
 
     </div>
 </div>
