@@ -98,6 +98,43 @@ body {
   padding-bottom: 20px;
 }
 
+.hero-before-title {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1.55;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+}
+
+.hero-title {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: #FFFFFF;
+}
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    font-size: 55px;
+  }
+}
+
+.make-reservation__button {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 16px 33px;
+  background-color: #7A9CA5;
+  font-family: "Manrope";
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 1.25;
+  letter-spacing: 0.12em;
+  color: #FFFFFF;
+}
+
 .button-link {
   margin-top: 10px;
   padding: 18px 43px;
@@ -1548,4 +1585,24 @@ body {
 
 .blog__link {
   margin-top: 0;
+}
+
+.about-hero {
+  background-color: rgb(30, 44, 48);
+  background-image: url(../images/about-hero-bg-min.jpg);
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .about-hero {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+
+.about-hero__container {
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
 }/*# sourceMappingURL=main.css.map */
