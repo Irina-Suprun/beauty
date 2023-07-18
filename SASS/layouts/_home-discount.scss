@@ -2,8 +2,8 @@
     background-color: $sectionBgColor;
 
     @include desktop {
-        padding-top: 120px;
-        padding-bottom: 120px;
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
 }
 .discount-container {
@@ -112,18 +112,11 @@ width: 550px;
     }
 }
 
-//  .discount__form {
-
-//  }
-
  .field {
     margin-bottom: 15px;
     position: relative;
  }
 
-//  .field__title {
-  
-//  }
 
  .field__input {
     padding-left: 54px;
@@ -170,4 +163,13 @@ width: 550px;
     justify-content: center;
     align-items: center;
 
+ }
+< !-- SERVICES -->
+ .discount__services {
+    @include tablet {
+        max-width: 655px;
+    }
+ }
+ .discount__services .discount-box {
+justify-content: center;
  }
