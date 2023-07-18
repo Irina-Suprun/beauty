@@ -1659,4 +1659,65 @@ body {
 .values__text {
   margin-top: 10px;
   margin-bottom: 30px;
+}
+
+.about-us {
+  background-color: #EBF3F5;
+}
+@media screen and (min-width: 768px) {
+  .about-us {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about-us {
+    padding-top: 190px;
+    padding-bottom: 190px;
+  }
+}
+
+.about-us__container {
+  background-color: #1E2C30;
+  color: #FFFFFF;
+  position: relative;
+}
+
+.about-us__describe {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .about-us__describe {
+    margin-left: 50%;
+    margin-right: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about-us__describe {
+    margin-top: 34px;
+    margin-bottom: 34px;
+    margin-right: 70px;
+  }
+}
+
+.about-us__text {
+  color: #FFFFFF;
+}
+
+@media screen and (min-width: 768px) {
+  .about-us__picture {
+    width: 40%;
+    height: auto;
+    position: absolute;
+    top: 55px;
+    left: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about-us__picture {
+    position: absolute;
+    top: -51px;
+    left: 60px;
+  }
 }/*# sourceMappingURL=main.css.map */
