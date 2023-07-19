@@ -26,6 +26,7 @@ background-image: url(../images/visitting-bg-min.jpg);
 position: absolute;
 top: 45px;
 left: -45px;
+box-shadow: $shadow;
 }
 .visiting__content {
    @include desktop {

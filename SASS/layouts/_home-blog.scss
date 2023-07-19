@@ -1,8 +1,8 @@
 .blog {
   text-align: center;
     @include desktop {
-            padding-top: 120px;
-            padding-bottom: 120px;
+            padding-top: 110px;
+            padding-bottom: 110px;
         }
 }
 
@@ -16,6 +16,7 @@
     @include tablet {
         display: flex;
         gap: 10px;
+        flex-wrap: wrap;
     }
     @include desktop {
         gap: 45px;
@@ -26,10 +27,15 @@
 .blog__item {
         background-color: $reviewsBgColor;
         margin-bottom: 30px;
-        @include desktop {
-            margin-bottom: 0;
-            text-align: justify;
-        }
+        @include tablet {
+                
+                width: calc((100% - 20px) / 2);
+            }
+        
+            @include desktop {
+                margin-bottom: 0;
+                width: calc((100% - 90px) / 3);
+            }
 }
 
 .blog__picture {
@@ -42,7 +48,7 @@
 
 .blog__text {
 padding: 25px 30px;
-
+text-align: left;
 }
 
 .blog__pre-title {
