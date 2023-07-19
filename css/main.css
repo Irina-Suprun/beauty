@@ -1556,6 +1556,7 @@ body {
     gap: 10px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1571,12 +1572,12 @@ body {
 }
 @media screen and (min-width: 768px) {
   .blog__item {
+    margin-bottom: 0;
     width: calc((100% - 20px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
   .blog__item {
-    margin-bottom: 0;
     width: calc((100% - 90px) / 3);
   }
 }

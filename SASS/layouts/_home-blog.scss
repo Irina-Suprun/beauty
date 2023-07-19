@@ -17,6 +17,7 @@
         display: flex;
         gap: 10px;
         flex-wrap: wrap;
+        margin-bottom: 30px;
     }
     @include desktop {
         gap: 45px;
@@ -28,12 +29,11 @@
         background-color: $reviewsBgColor;
         margin-bottom: 30px;
         @include tablet {
-                
+                    margin-bottom: 0;
                 width: calc((100% - 20px) / 2);
             }
         
             @include desktop {
-                margin-bottom: 0;
                 width: calc((100% - 90px) / 3);
             }
 }
