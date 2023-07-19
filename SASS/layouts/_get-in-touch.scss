@@ -1,0 +1,89 @@
+.visiting {
+    @include desktop {
+        padding-top: 115px;
+        padding-bottom: 115px;
+    }
+}
+
+.visiting__box {
+    @include tablet {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.visiting__picture {
+    @include desktop {
+background-image: url(../images/visitting-bg-min.jpg);
+    margin-right: 120px;
+    position: relative;
+    width: 500px;
+    height: 565px;
+    }
+    
+}
+.visiting__photo {
+position: absolute;
+top: 45px;
+left: -45px;
+}
+.visiting__content {
+   @include desktop {
+    max-width: 535px;
+    margin-right: 0;
+    margin-top: 25px;
+   }
+}
+.visiting__content .before-title,
+.visiting__content .title  {
+    @include desktop {
+            text-align: left;
+        }
+}
+
+.before-title {}
+
+.title {}
+
+.visiting__text {
+    @include desktop {
+            margin-bottom: 45px;
+        }
+
+}
+
+.visiting__list {
+    padding: 0;
+
+}
+
+.visiting__item {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+    @include desktop {
+        margin-bottom: 30px;
+    }
+}
+.visiting__item:last-child {
+    margin-bottom: 0;
+}
+.visiting__icon {
+    margin-right: 30px;
+    width: 65px;
+    height: 65px;
+    border: solid 2px $btBgColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.visiting__contacts {}
+.visiting__contacts .before-title {
+    line-height: 1.25%;
+    letter-spacing: 0.06em;
+    color: $titleColor;
+    text-align: justify;
+    margin-top: 8px;
+
+}
+.title-less {}

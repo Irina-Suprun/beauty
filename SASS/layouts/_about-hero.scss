@@ -18,7 +18,12 @@ margin-right: auto;
 
     }
 }
-
+ .contact__hero {
+    @include desktop {
+            padding-top: 200px;
+            padding-bottom: 100px;
+        }
+ }
 
 
 
