@@ -1988,11 +1988,11 @@ body {
   margin-top: 8px;
 }
 
-.schedule {
+.schedules {
   background-color: #EBF3F5;
 }
 @media screen and (min-width: 1200px) {
-  .schedule {
+  .schedules {
     padding-top: 90px;
     padding-bottom: 90px;
   }
