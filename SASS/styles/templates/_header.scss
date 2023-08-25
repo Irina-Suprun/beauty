@@ -1,0 +1,155 @@
+// .header {
+
+//  }
+.header__box {
+    width: 100%;
+    width: auto;
+    padding: 15px 15px;
+
+    @include mobile {
+        width: 480px;
+    }
+
+    @include tablet {
+        width: auto;
+        display: flex;
+    }
+
+    @include desktop {
+        height: 125px;
+        width: auto;
+        padding-left: 60px;
+        padding-right: 60px;
+        margin: 0;
+    }
+}
+
+.left-side {
+
+    @include mobile {
+        margin-bottom: 20px;
+        padding-right: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    @include tablet {
+        margin-bottom: 0;
+        display: block;
+    }
+
+    @include desktop {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-family: $font-family-logo;
+    font-weight: 700;
+    font-size: $font-size-logo;
+    line-height: $line-height-base;
+    color: $color-logo;
+
+    @include desktop {
+        margin-right: 45px;
+    }
+}
+
+.logo__icon {
+    margin-right: 12px;
+}
+
+.contact {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    font-family: $font-family-text;
+    font-weight: 600;
+    font-size: $font-size-s;
+    line-height: $line-height-base;
+    color: $color-title;
+
+    @include tablet {
+        font-size: $font-size-l;
+        margin-top: 30px;
+        margin-bottom: 0;
+    }
+
+    @include desktop {
+        margin: 0;
+    }
+}
+
+.contact__icon {
+    margin-right: 12px;
+}
+
+.right-side {
+    margin-left: auto;
+    margin-right: 0px;
+
+    @include desktop {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
+    }
+}
+
+.main-nav {
+    display: flex;
+}
+
+.site-nav {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+
+    @include mobile {
+        gap: 30px;
+    }
+
+    @include desktop {
+        margin-bottom: 0px;
+    }
+}
+
+.site-nav__link {
+    font-family: $font-family-text;
+    font-weight: 400;
+    font-size: $font-size-l;
+    line-height: $line-height-base;
+    color: $color-primary-text;
+}
+
+.right-side__section {
+    display: flex;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    @include desktop {
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+}
+
+// .social__link {
+
+// }
+// .social__icon {
+
+// }
+.header__button {
+    margin-right: 0px;
+}
+
+.button__icon {
+    margin-right: 12px;
+}

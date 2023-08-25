@@ -1,0 +1,11 @@
+// header button
+.button {
+    padding: 16px 33px;
+    background-color: $bg-color-button;
+    font-family: $font-family-text;
+    font-weight: 700;
+    font-size: $font-size-s;
+    line-height: $line-height-base;
+    color: $color-white;
+    display: flex;
+}
