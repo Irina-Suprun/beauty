@@ -1,0 +1,99 @@
+.price {
+    @include desktop {
+        text-align: center;
+    }
+}
+
+.price h3 {
+    margin-bottom: 40px;
+}
+
+.price__section {
+    @include tablet {
+        text-align: center;
+    }
+
+    @include desktop {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.price__picture {
+    box-shadow: $shadow;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin: 0 auto;
+    }
+
+    @include desktop {
+        margin: 0;
+    }
+}
+
+.price__list {
+    padding-top: 30px;
+}
+
+.price__item {
+    padding-top: 18px;
+    padding-bottom: 22px;
+    border-bottom: $border-bottom-price;
+}
+
+.price__item .title {
+    text-align: left;
+}
+
+.text-span {
+    font-family: $font-family-text;
+    font-weight: 400;
+    font-size: $font-size-l;
+    line-height: $line-height-text;
+    color: $color-primary-text;
+}
+
+// .price__text {}
+
+.box-square {
+    @include desktop {
+        position: relative;
+    }
+}
+
+.figure-square {
+    @include desktop {
+        position: absolute;
+        top: -90px;
+        left: 511px;
+        z-index: -1;
+    }
+}
+
+.price__box {
+    @include desktop {
+        text-align: left;
+    }
+}
+
+.price__box .button-link {
+
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 30px;
+    }
+}
+
+.padding-box-right {
+    @include desktop {
+        padding-left: 67px;
+    }
+
+}
+
+.padding-box-left {
+    @include desktop {
+        padding-top: 90px;
+        padding-right: 67px;
+    }
+
+}

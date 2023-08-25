@@ -1,11 +1,30 @@
 @import "./utils/reset";
 @import "./utils/mixins";
+
 @import "./styles/variables";
+
+@import "./styles/components/variables";
 @import "./styles/components/container";
+@import "./styles/components/title";
+@import "./styles/components/paragraph";
 @import "./styles/components/button";
+
 @import "./styles/templates/variables";
 @import "./styles/templates/header";
 @import "./styles/templates/footer";
+@import "./styles/templates/hero";
+
+
+@import "./styles/sections/variables";
+@import "./styles/sections/home/hero";
+@import "./styles/sections/home/treatments";
+@import "./styles/sections/home/about";
+@import "./styles/sections/home/price";
+@import "./styles/sections/home/testimonials";
+@import "./styles/sections/home/benefits";
+@import "./styles/sections/home/discount";
+@import "./styles/sections/home/blog";
+
 
 // @import "./utils/variables";
 // @import "./base/reset";
