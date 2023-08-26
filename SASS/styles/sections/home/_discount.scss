@@ -201,9 +201,15 @@
 
 // SERVICES
 .discount__services {
+    text-align: center;
+
     @include tablet {
         max-width: 655px;
     }
+}
+
+.discount__services .title {
+    margin-bottom: 15px;
 }
 
 .discount__services .discount-box {

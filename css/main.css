@@ -1415,10 +1415,17 @@ p {
           align-items: center;
 }
 
+.discount__services {
+  text-align: center;
+}
 @media screen and (min-width: 768px) {
   .discount__services {
     max-width: 655px;
   }
+}
+
+.discount__services .title {
+  margin-bottom: 15px;
 }
 
 .discount__services .discount-box {
