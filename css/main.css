@@ -1772,4 +1772,124 @@ p {
 
 .subscription__button .make-reservation__button {
   padding: 23px 72px;
+}
+
+@media screen and (min-width: 768px) {
+  .visiting__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .visiting__picture {
+    background-image: url(../images/visitting-bg-min.jpg);
+    margin-right: 120px;
+    position: relative;
+    width: 500px;
+    height: 565px;
+  }
+}
+
+.visiting__photo {
+  position: absolute;
+  top: 45px;
+  left: -45px;
+  -webkit-box-shadow: 0px 20px 40px rgba(42, 68, 75, 0.2);
+          box-shadow: 0px 20px 40px rgba(42, 68, 75, 0.2);
+}
+
+@media screen and (min-width: 1200px) {
+  .visiting__content {
+    max-width: 535px;
+    margin-right: 0;
+    margin-top: 25px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .visiting__content .before-title,
+  .visiting__content .title {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .visiting__text {
+    margin-bottom: 45px;
+  }
+}
+
+.visiting__list {
+  padding: 0;
+}
+
+.visiting__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .visiting__item {
+    margin-bottom: 30px;
+  }
+}
+
+.visiting__item:last-child {
+  margin-bottom: 0;
+}
+
+.visiting__icon {
+  margin-right: 30px;
+  width: 65px;
+  height: 65px;
+  border: solid 2px #7A9CA5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.visiting__contacts .before-title {
+  line-height: 1.25%;
+  letter-spacing: 0.06em;
+  color: #141414;
+  text-align: justify;
+  margin-top: 8px;
+}
+
+.schedules {
+  background-color: #EBF3F5;
+}
+
+.schedule__registration {
+  background-color: #FFFFFF;
+  padding: 20px;
+  max-width: 1010px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 1200px) {
+  .schedule__registration {
+    padding: 100px;
+  }
+}
+
+.schedule__text {
+  margin: 20px;
+  max-width: 620px;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,21 @@
+.schedules {
+    background-color: $bg-color-section;
+}
+
+.schedule__registration {
+    background-color: $bg-color-base;
+    padding: 20px;
+    max-width: 1010px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include desktop {
+        padding: 100px;
+    }
+}
+
+.schedule__text {
+    margin: 20px;
+    max-width: 620px;
+    text-align: center;
+}
