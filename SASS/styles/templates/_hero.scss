@@ -9,26 +9,26 @@
     padding-bottom: 20px;
 }
 
-// .hero-before-title {
-//     font-weight: 600;
-//     font-size: 15px;
-//     line-height: 1.55;
-//     letter-spacing: 0.1em;
-//     color: $whiteColor;
-// }
+.hero-before-title {
+    font-weight: 600;
+    font-size: $font-size-m;
+    line-height: 1.55;
+    letter-spacing: 0.1em;
+    color: $color-white;
+}
 
-// .hero-title {
-//     margin-top: 10px;
-//     margin-bottom: 30px;
-//     font-family: 'Playfair Display';
-//     font-weight: 700;
-//     font-size: 35px;
-//     line-height: 1.2;
-//     letter-spacing: -0.01em;
-//     color: $whiteColor;
+.hero-title {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-family: $font-family-title;
+    font-weight: 700;
+    font-size: $font-size-h1-mobile;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: $color-white;
 
-//     @include desktop {
-//         font-size: 55px;
-//     }
-// }
+    @include desktop {
+        font-size: $font-size-h2-desktop;
+    }
+}
 

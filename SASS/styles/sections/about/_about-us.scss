@@ -1,0 +1,56 @@
+.about-us {
+    background-color: $bg-color-section;
+
+    @include tablet {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+
+    @include desktop {
+        padding-top: 190px;
+        padding-bottom: 190px;
+    }
+}
+
+.about-us__container {
+    background-color: $bg-color-dark;
+    color: $color-white;
+    position: relative;
+}
+
+.about-us__describe {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    @include tablet {
+        margin-left: 50%;
+        margin-right: 20px;
+    }
+
+    @include desktop {
+        margin-top: 34px;
+        margin-bottom: 34px;
+        margin-right: 70px;
+    }
+}
+
+
+.about-us__text {
+    color: $color-white;
+}
+
+.about-us__picture {
+    @include tablet {
+        width: 40%;
+        height: auto;
+        position: absolute;
+        top: 55px;
+        left: 30px;
+    }
+
+    @include desktop {
+        position: absolute;
+        top: -51px;
+        left: 60px;
+    }
+}

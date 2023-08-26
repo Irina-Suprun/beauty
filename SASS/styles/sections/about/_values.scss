@@ -1,0 +1,50 @@
+// .values {
+
+// }
+
+.values .before-title {
+    text-align: center;
+}
+
+.values__item {
+    max-width: 620px;
+    display: flex;
+    border-bottom: $border-bottom-values;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+.values__item:last-child {
+    border: none;
+}
+
+.values__picture {
+    min-width: 100px;
+    height: 100px;
+    background-color: $bg-color-values-icon;
+    border: $border-values-pictures;
+    display: flex;
+    margin-right: 10px;
+
+    @include tablet {
+        margin-right: 30px;
+    }
+}
+
+.values__icon {
+    margin: auto;
+}
+
+.values__describe {
+    max-width: 458px;
+}
+
+.values__describe .title {
+    text-align: left;
+}
+
+.values__text {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}

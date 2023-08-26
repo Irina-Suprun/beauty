@@ -1,0 +1,19 @@
+.about-hero {
+    background-color: $bg-color-hero;
+    background-image: url(../images/about-hero-bg-min.jpg);
+    text-align: center;
+}
+
+.about-hero__container {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact__hero {
+    
+    @include desktop {
+        padding-top: 200px;
+        padding-bottom: 100px;
+    }
+}
