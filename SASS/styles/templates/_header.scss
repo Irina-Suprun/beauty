@@ -123,6 +123,51 @@
     font-size: $font-size-l;
     line-height: $line-height-base;
     color: $color-primary-text;
+
+    &:hover,
+    &:focus {
+        color: $color-2;
+        font-weight: 700;
+        transition: 200ms linear;
+    }
+}
+
+.dropdown {
+    background-color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    color: $color-1;
+    position: absolute;
+    z-index: 1;
+    display: none;
+    background-color: inherit;
+
+    &:hover,
+    &:focus {
+        color: $color-2;
+        font-weight: 700;
+        transition: 200ms linear;
+    }
+}
+
+.dropdown-content .site-nav__link {
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content__link {
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.dropdown-content__item:last-child {
+    padding-bottom: 20px;
 }
 
 .right-side__section {

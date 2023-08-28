@@ -320,6 +320,49 @@ p {
   line-height: 1.25;
   color: #555555;
 }
+.site-nav__link:hover, .site-nav__link:focus {
+  color: #5C8692;
+  font-weight: 700;
+  -webkit-transition: 200ms linear;
+  transition: 200ms linear;
+}
+
+.dropdown {
+  background-color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content {
+  color: #1E2C30;
+  position: absolute;
+  z-index: 1;
+  display: none;
+  background-color: inherit;
+}
+.dropdown-content:hover, .dropdown-content:focus {
+  color: #5C8692;
+  font-weight: 700;
+  -webkit-transition: 200ms linear;
+  transition: 200ms linear;
+}
+
+.dropdown-content .site-nav__link {
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content__link {
+  padding-top: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.dropdown-content__item:last-child {
+  padding-bottom: 20px;
+}
 
 .right-side__section {
   display: -webkit-box;
