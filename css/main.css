@@ -122,7 +122,7 @@ p {
 }
 
 .button {
-  padding: 16px 33px;
+  padding: 12px 24px;
   background-color: #7A9CA5;
   font-family: Manrope;
   font-weight: 700;
@@ -134,6 +134,11 @@ p {
   display: -ms-flexbox;
   display: flex;
 }
+@media screen and (min-width: 1200px) {
+  .button {
+    padding: 18px 30px;
+  }
+}
 
 .make-reservation__button {
   margin-left: auto;
@@ -143,7 +148,7 @@ p {
 
 .button-link {
   margin-top: 10px;
-  padding: 18px 43px;
+  padding: 18px 42px;
   display: inline-block;
   background-color: #FFFFFF;
   border: 2px solid #5C8692;
@@ -162,18 +167,10 @@ p {
 }
 
 .header__box {
-  width: 100%;
-  width: auto;
-  padding: 15px 15px;
-}
-@media screen and (min-width: 480px) {
-  .header__box {
-    width: 480px;
-  }
+  padding: 15px;
 }
 @media screen and (min-width: 768px) {
   .header__box {
-    width: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -182,17 +179,28 @@ p {
 @media screen and (min-width: 1200px) {
   .header__box {
     height: 125px;
-    width: auto;
     padding-left: 60px;
     padding-right: 60px;
     margin: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
+.header__button {
+  margin-right: 0px;
+}
 
+.left-side {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
 @media screen and (min-width: 480px) {
   .left-side {
-    margin-bottom: 20px;
-    padding-right: 10px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -203,7 +211,6 @@ p {
 }
 @media screen and (min-width: 768px) {
   .left-side {
-    margin-bottom: 0;
     display: block;
   }
 }
@@ -238,28 +245,33 @@ p {
 }
 
 .logo__icon {
-  margin-right: 12px;
+  margin-right: 6px;
+}
+@media screen and (min-width: 1200px) {
+  .logo__icon {
+    margin-right: 12px;
+  }
 }
 
 .contact {
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-family: Manrope;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.25;
   color: #141414;
 }
+@media screen and (min-width: 480px) {
+  .contact {
+    margin: 0;
+  }
+}
 @media screen and (min-width: 768px) {
   .contact {
     font-size: 18px;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-bottom: 0;
   }
 }
@@ -268,14 +280,17 @@ p {
     margin: 0;
   }
 }
-
 .contact__icon {
-  margin-right: 12px;
+  margin-right: 6px;
+}
+@media screen and (min-width: 1200px) {
+  .contact__icon {
+    margin-right: 12px;
+  }
 }
 
 .right-side {
   margin-left: auto;
-  margin-right: 0px;
 }
 @media screen and (min-width: 1200px) {
   .right-side {
@@ -288,6 +303,11 @@ p {
     margin-bottom: 0;
   }
 }
+.right-side__section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 
 .main-nav {
   display: -webkit-box;
@@ -299,30 +319,37 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 10px;
-  margin-bottom: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
 }
 @media screen and (min-width: 480px) {
   .site-nav {
-    gap: 30px;
+    gap: 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .site-nav {
-    margin-bottom: 0px;
+    margin-top: 0;
+    gap: 10px;
   }
 }
-
 .site-nav__link {
-  font-family: Manrope;
-  font-weight: 400;
-  font-size: 18px;
+  padding: 6px;
   line-height: 1.25;
   color: #555555;
 }
+@media screen and (min-width: 1200px) {
+  .site-nav__link {
+    padding: 12px;
+  }
+}
 .site-nav__link:hover, .site-nav__link:focus {
-  color: #5C8692;
-  font-weight: 700;
+  color: #1E2C30;
+  border-bottom: solid #5C8692 1px;
   -webkit-transition: 200ms linear;
   transition: 200ms linear;
 }
@@ -342,32 +369,37 @@ p {
   display: none;
   background-color: inherit;
 }
-.dropdown-content:hover, .dropdown-content:focus {
-  color: #5C8692;
-  font-weight: 700;
+@media screen and (min-width: 1200px) {
+  .dropdown-content {
+    padding: 12px;
+  }
+}
+.dropdown-content__link {
+  padding: 6px;
+  line-height: 1.25;
+  color: #555555;
+}
+@media screen and (min-width: 1200px) {
+  .dropdown-content__link {
+    padding: 24px;
+  }
+}
+.dropdown-content__item {
+  padding: 6px;
+}
+.dropdown-content__item:hover, .dropdown-content__item:focus {
+  color: #1E2C30;
+  border-bottom: solid #5C8692 1px;
   -webkit-transition: 200ms linear;
   transition: 200ms linear;
+}
+.dropdown-content__item:last-child {
+  padding-bottom: 20px;
 }
 
 .dropdown-content .site-nav__link {
   display: block;
   text-align: left;
-}
-
-.dropdown-content__link {
-  padding-top: 20px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.dropdown-content__item:last-child {
-  padding-bottom: 20px;
-}
-
-.right-side__section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .social {
@@ -381,13 +413,9 @@ p {
 }
 @media screen and (min-width: 1200px) {
   .social {
-    margin-left: 32px;
-    margin-right: 32px;
+    margin-left: 30px;
+    margin-right: 30px;
   }
-}
-
-.header__button {
-  margin-right: 0px;
 }
 
 .button__icon {
@@ -1935,4 +1963,12 @@ p {
   margin: 20px;
   max-width: 620px;
   text-align: center;
+}
+
+body {
+  font-family: Manrope;
+  color: #555555;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.25;
 }/*# sourceMappingURL=main.css.map */

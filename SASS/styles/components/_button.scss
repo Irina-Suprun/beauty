@@ -1,5 +1,5 @@
 .button {
-    padding: 16px 33px;
+    padding: $spacing-base*2 $spacing-base*4;
     background-color: $bg-color-button;
     font-family: $font-family-text;
     font-weight: 700;
@@ -8,6 +8,10 @@
     letter-spacing: 0.12em;
     color: $color-white;
     display: flex;
+
+    @include desktop {
+        padding: $spacing-base*3 $spacing-base*5;
+    }
 }
 
 .make-reservation__button {
@@ -17,8 +21,8 @@
 }
 
 .button-link {
-    margin-top: 10px;
-    padding: 18px 43px;
+    margin-top: $spacing-secondary*2;
+    padding: $spacing-base*3 $spacing-base*7;
     display: inline-block;
     background-color: $color-white;
     border: 2px solid $color-border;
@@ -31,6 +35,6 @@
     color: $color-title;
 
     @include tablet {
-        margin-top: 30px;
+        margin-top: $spacing-base*5;
     }
 }

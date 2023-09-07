@@ -33,12 +33,10 @@
 @import "./styles/sections/schedule";
 
 
-
-// @import "./base/common";
-// @import "./components/container";
-// @import "./components/hidden";
-
-// @import "./layouts/heroError";
-// @import "./layouts/error-section";
-
-
+body {
+    font-family: $font-family-text;
+    color: $color-primary-text;
+    font-weight: 400;
+    font-size: $font-size-l;
+    line-height: $line-height-base;
+}
