@@ -1,92 +1,89 @@
 .about {
     background-color: $bg-color-section;
-}
 
-.about__box {
+    &__box {
+        @include tablet {
+            display: flex;
+            gap: 15px;
+        }
 
-    @include desktop {
+        @include desktop {
+            display: flex;
+            gap: 125px;
+        }
+    }
+
+    &__text {
+        text-align: justify;
+
+        @include tablet {
+            max-width: 300px;
+        }
+
+        @include desktop {
+            max-width: 530px;
+            text-align: left;
+            padding-top: $spacing-secondary*5;
+            padding-bottom: $spacing-secondary*5;
+        }
+
+        .title {
+            @include desktop {
+                text-align: left;
+            }
+        }
+    }
+
+    &__paragraph {
+        margin-top: $spacing-secondary*3;
+    }
+
+    &__list {
+        margin-top: $spacing-secondary*3;
+        margin-bottom: $spacing-secondary*3;
         display: flex;
-        gap: 125px;
-    }
-}
+        gap: 10px;
 
-.about__text {
-    text-align: justify;
-
-    @include desktop {
-        text-align: left;
-        padding-top: 27px;
-        padding-bottom: 27px;
-    }
-}
-
-.about__paragraph {
-    margin-top: 16px;
-}
-
-.about__list {
-    margin-top: 37px;
-    margin-bottom: 20px;
-    display: flex;
-    gap: 10px;
-
-    @include tablet {
-        justify-content: space-between;
+        @include desktop {
+            margin-top: $spacing-secondary*7;
+            margin-bottom: $spacing-secondary*4;
+        }
     }
 
-}
+    &__item {
+        background-color: $bg-color-base;
+        padding: $spacing-secondary*2 $spacing-secondary*3;
+        border: 1px solid $color-1;
+        max-width: 165px;
 
-.about__item {
-    background-color: $bg-color-base;
-    padding: 20px 33px;
-    border: 1px solid $color-1;
-}
-
-.about__icons {
-    text-align: center;
-}
-
-.about__text .title {
-    @include desktop {
-        text-align: left;
+        @include desktop {
+            padding: $spacing-secondary*4 $spacing-secondary*6;
+        }
     }
 
-}
-
-.about__icons .title {
-    @include desktop {
+    &__icons {
         text-align: center;
+
+        .title {
+            @include desktop {
+                text-align: center;
+            }
+        }
     }
 
-}
+    &__photo {
+        background-color: $bg-color-base;
 
-.bg-photo {
-    @include tablet {
-        margin-left: auto;
-        margin-right: auto;
+        @include tablet {
+            background-color: transparent;
+        }
     }
 
-    @include desktop {
-        height: 576px;
+    &__picture {
 
-    }
-}
-
-.about__photo {
-    position: relative;
-
-}
-
-.about__picture {
-    box-shadow: $shadow;
-    position: absolute;
-
-    @include tablet {
-        left: 119px;
-    }
-
-    @include desktop {
-        top: -536px;
-        left: 660px;
+        @include tablet {
+            position: relative;
+            top: 50px;
+        }
     }
 }
