@@ -1,7 +1,6 @@
 .button {
     padding: $spacing-base*2 $spacing-base*4;
     background-color: $bg-color-button;
-    font-family: $font-family-text;
     font-weight: 700;
     font-size: $font-size-s;
     line-height: $line-height-base;
@@ -26,7 +25,6 @@
     display: inline-block;
     background-color: $color-white;
     border: 2px solid $color-border;
-    font-family: $font-family-text;
     font-weight: 800;
     font-size: $font-size-s;
     line-height: $line-height-base;
@@ -35,6 +33,6 @@
     color: $color-title;
 
     @include tablet {
-        margin-top: $spacing-base*5;
+        margin-top: $spacing-secondary*3;
     }
 }

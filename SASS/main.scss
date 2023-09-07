@@ -6,7 +6,6 @@
 @import "./styles/components/variables";
 @import "./styles/components/container";
 @import "./styles/components/title";
-@import "./styles/components/paragraph";
 @import "./styles/components/button";
 
 @import "./styles/templates/variables";
@@ -37,6 +36,11 @@ body {
     font-family: $font-family-text;
     color: $color-primary-text;
     font-weight: 400;
-    font-size: $font-size-l;
-    line-height: $line-height-base;
+    font-size: $font-size-m;
+    letter-spacing: 0.02em;
+    line-height: $line-height-text;
+
+    @include desktop {
+        font-size: $font-size-l;
+    }
 }

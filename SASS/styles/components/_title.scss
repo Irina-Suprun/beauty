@@ -38,7 +38,10 @@ h3 {
 //     font-family: $font-family-title;
 // }
 h5 {
-    font-size: $font-size-h5-desktop;
+    font-size: $font-size-h5;
+    @include desktop {
+        font-size: $font-size-h5-desktop;
+    }
 }
 h6 {
     font-size: $font-size-h6-desktop;
