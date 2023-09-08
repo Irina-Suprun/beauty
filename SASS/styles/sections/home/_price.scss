@@ -60,7 +60,6 @@
             }
         }
     }
-
 }
 
 .text-span {
@@ -70,8 +69,6 @@
     line-height: $line-height-text;
     color: $color-primary-text;
 }
-
-// .price__text {}
 
 .box-square {
     @include tablet {
@@ -89,7 +86,6 @@
     }
 }
 
-
 .padding-box-right {
     @include tablet {
         padding-left: $spacing-secondary*3;
@@ -105,5 +101,4 @@
         padding-top: $spacing-base*15;
         padding-right: $spacing-base*11;
     }
-
 }
