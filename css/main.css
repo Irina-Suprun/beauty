@@ -964,6 +964,9 @@ h6 {
     margin-bottom: 30px;
   }
 }
+.price__section {
+  margin-bottom: 15px;
+}
 @media screen and (min-width: 768px) {
   .price__section {
     display: -webkit-box;
@@ -972,6 +975,7 @@ h6 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    margin-bottom: 0;
   }
 }
 .price__picture {
@@ -1273,23 +1277,8 @@ h6 {
       -ms-flex-align: center;
           align-items: center;
 }
-.discount__services {
-  text-align: center;
-}
-@media screen and (min-width: 768px) {
-  .discount__services {
-    max-width: 655px;
-  }
-}
-.discount__services .title {
-  margin-bottom: 15px;
-}
-.discount__services .discount-box {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.discount .discount-box {
+
+.discount-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1299,44 +1288,53 @@ h6 {
   margin-top: 20px;
 }
 @media screen and (min-width: 768px) {
-  .discount .discount-box {
+  .discount-box {
     -webkit-box-pack: left;
         -ms-flex-pack: left;
             justify-content: left;
   }
 }
-.discount .discount-box__list {
+.discount-box-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+}
+.discount-box__list {
   background-color: #FFFFFF;
   padding: 10px;
   border: solid 1px #95BFCB;
 }
 @media screen and (min-width: 1200px) {
-  .discount .discount-box__list {
+  .discount-box__list {
     padding: 15px 40px;
   }
 }
-.discount .discount-box__item {
+.discount-box__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   text-align: start;
 }
-.discount .discount-box__item:first-child {
+.discount-box__item:first-child {
   margin-bottom: 15px;
 }
-.discount .discount-box__contact {
+.discount-box__contact {
   color: #141414;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 0;
 }
-.discount .discount-box__contact-accent {
+.discount-box__contact-accent {
   font-weight: 800;
   font-size: 14px;
   letter-spacing: 0.08em;
   line-height: 1.65;
 }
-.discount .discount-box__right {
+.discount-box__right {
   padding: 10px;
   background-color: #1E2C30;
   color: #FFFFFF;
@@ -1344,35 +1342,37 @@ h6 {
   text-align: center;
 }
 @media screen and (min-width: 1200px) {
-  .discount .discount-box__right {
+  .discount-box__right {
     padding: 15px 35px;
   }
 }
-.discount .discount-box__title {
+.discount-box__title {
   font-weight: 800;
   font-size: 16px;
   line-height: 1.73;
   letter-spacing: 0.1em;
 }
-.discount .discount-box__icons {
+.discount-box__icons {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
-.discount .discount-box__text {
+.discount-box__text {
   font-size: 18px;
   font-weight: 800;
   color: #FFFFFF;
   letter-spacing: 0.02em;
 }
-.discount .discount-container__icon {
+
+.discount-container__icon {
   margin: 10px auto;
 }
-.discount .field {
+
+.field {
   margin-bottom: 15px;
   position: relative;
 }
-.discount .field__input {
+.field__input {
   padding-left: 55px;
   width: 100%;
   height: 65px;
@@ -1384,14 +1384,14 @@ h6 {
   letter-spacing: 0;
   color: #555555;
 }
-.discount .field__icon {
+.field__icon {
   position: absolute;
   left: 15px;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
-.discount .field__textarea {
+.field__textarea {
   padding-left: 55px;
   padding-top: 15px;
   width: 100%;
@@ -1405,12 +1405,24 @@ h6 {
   letter-spacing: 0;
   color: #555555;
 }
-.discount .field__icon-textarea {
+.field__icon-textarea {
   position: absolute;
   left: 15px;
   top: 23%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+.discount-services {
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .discount-services {
+    max-width: 655px;
+  }
+}
+.discount-services .title {
+  margin-bottom: 15px;
 }
 
 .blog {
@@ -1761,6 +1773,10 @@ h6 {
     text-align: left;
   }
 }
+.visiting__text {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
 @media screen and (min-width: 1200px) {
   .visiting__text {
     margin-bottom: 45px;
@@ -1787,7 +1803,7 @@ h6 {
   margin-bottom: 0;
 }
 .visiting__icon {
-  margin-right: 30px;
+  margin-right: 15px;
   width: 65px;
   height: 65px;
   border: solid 2px #7A9CA5;
@@ -1808,28 +1824,29 @@ h6 {
   text-align: justify;
   margin-top: 8px;
 }
+.visiting__contacts .title {
+  text-align: left;
+}
 
 .schedules {
   background-color: #EBF3F5;
 }
-
-.schedule__registration {
+.schedules__text {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.schedules__registration {
   background-color: #FFFFFF;
-  padding: 20px;
+  padding: 10px;
   max-width: 1010px;
   margin-left: auto;
   margin-right: auto;
 }
 @media screen and (min-width: 1200px) {
-  .schedule__registration {
+  .schedules__registration {
     padding: 100px;
   }
-}
-
-.schedule__text {
-  margin: 20px;
-  max-width: 620px;
-  text-align: center;
 }
 
 body {

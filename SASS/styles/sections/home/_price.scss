@@ -12,9 +12,12 @@
     }
 
     &__section {
+        margin-bottom: $spacing-secondary*3;
+
         @include tablet {
             display: flex;
             justify-content: space-between;
+            margin-bottom: 0;
         }
     }
 
