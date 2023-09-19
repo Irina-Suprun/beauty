@@ -1,56 +1,47 @@
 .about-us {
     background-color: $bg-color-section;
 
-    @include tablet {
-        padding-top: 90px;
-        padding-bottom: 90px;
+    &__container {
+        background-color: $bg-color-dark;
+        color: $color-white;
+        position: relative;
     }
 
-    @include desktop {
-        padding-top: 190px;
-        padding-bottom: 190px;
-    }
-}
+    &__describe {
+        padding-top: $spacing-secondary*3;
+        padding-bottom: $spacing-secondary*3;
+        padding-right: $spacing-secondary*3;
 
-.about-us__container {
-    background-color: $bg-color-dark;
-    color: $color-white;
-    position: relative;
-}
+        @include tablet {
+            margin-left: 40%;
+        }
 
-.about-us__describe {
-    margin-top: 20px;
-    margin-bottom: 20px;
-
-    @include tablet {
-        margin-left: 50%;
-        margin-right: 20px;
+        @include desktop {
+            margin-left: 45%;
+            padding-top: $spacing-secondary*6;
+            padding-bottom: $spacing-secondary*6;
+            padding-right: $spacing-secondary*6;
+        }
     }
 
-    @include desktop {
-        margin-top: 34px;
-        margin-bottom: 34px;
-        margin-right: 70px;
-    }
-}
-
-
-.about-us__text {
-    color: $color-white;
-}
-
-.about-us__picture {
-    @include tablet {
-        width: 40%;
-        height: auto;
-        position: absolute;
-        top: 55px;
-        left: 30px;
+    &__text {
+        color: $color-white;
+        text-align: justify;
     }
 
-    @include desktop {
-        position: absolute;
-        top: -51px;
-        left: 60px;
+    &__picture {
+        @include tablet {
+            width: 30%;
+            height: auto;
+            position: absolute;
+            top: 15px;
+            left: 15px;
+        }
+
+        @include desktop {
+            width: 35%;
+            top: -40px;
+            left: 60px;
+        }
     }
 }

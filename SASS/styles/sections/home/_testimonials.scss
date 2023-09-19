@@ -15,8 +15,11 @@
 
     &__item {
         @media screen and (max-width:767px) {
-            margin-bottom: $spacing-secondary*6;
+            margin-bottom: $spacing-secondary*3;
         }
+                @include desktop {
+                    margin-bottom: $spacing-secondary*6;
+                }
     }
 
     &__text {

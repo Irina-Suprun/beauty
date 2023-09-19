@@ -684,12 +684,25 @@ h6 {
 }
 
 .hero {
+  background-color: rgb(30, 44, 48);
+  background-image: url(../images/about-hero-bg-min.jpg);
+  text-align: center;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   margin: 0 auto;
   height: auto;
   width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .hero__container {
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__container {
+    max-width: 650px;
+  }
 }
 
 .hero-before-title {
@@ -701,8 +714,8 @@ h6 {
 }
 
 .hero-title {
-  margin-top: 10px;
-  margin-bottom: 30px;
+  margin-top: 15px;
+  margin-bottom: 15px;
   font-family: Playfair Display;
   font-weight: 700;
   font-size: 30px;
@@ -713,6 +726,7 @@ h6 {
 @media screen and (min-width: 1200px) {
   .hero-title {
     font-size: 55px;
+    margin-bottom: 30px;
   }
 }
 
@@ -1059,6 +1073,11 @@ h6 {
   }
 }
 @media screen and (max-width: 767px) {
+  .reviews__item {
+    margin-bottom: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
   .reviews__item {
     margin-bottom: 30px;
   }
@@ -1460,29 +1479,9 @@ h6 {
   margin-top: 0;
 }
 
-.about-hero {
-  background-color: rgb(30, 44, 48);
-  background-image: url(../images/about-hero-bg-min.jpg);
-  text-align: center;
-}
-
-.about-hero__container {
-  max-width: 650px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media screen and (min-width: 1200px) {
-  .contact__hero {
-    padding-top: 200px;
-    padding-bottom: 100px;
-  }
-}
-
 .values .before-title {
   text-align: center;
 }
-
 .values__item {
   max-width: 620px;
   display: -webkit-box;
@@ -1491,13 +1490,16 @@ h6 {
   border-bottom: solid 1px #D3D3D3;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 30px;
+  margin-top: 15px;
 }
-
+@media screen and (min-width: 1200px) {
+  .values__item {
+    margin-top: 30px;
+  }
+}
 .values__item:last-child {
   border: none;
 }
-
 .values__picture {
   min-width: 100px;
   height: 100px;
@@ -1506,97 +1508,77 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 10px;
+  margin-right: 15px;
 }
 @media screen and (min-width: 768px) {
   .values__picture {
     margin-right: 30px;
   }
 }
-
 .values__icon {
   margin: auto;
 }
-
 .values__describe {
   max-width: 458px;
 }
-
 .values__describe .title {
   text-align: left;
 }
-
 .values__text {
-  margin-top: 10px;
-  margin-bottom: 30px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 1200px) {
+  .values__text {
+    margin-bottom: 30px;
+  }
 }
 
 .about-us {
   background-color: #EBF3F5;
 }
-@media screen and (min-width: 768px) {
-  .about-us {
-    padding-top: 90px;
-    padding-bottom: 90px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .about-us {
-    padding-top: 190px;
-    padding-bottom: 190px;
-  }
-}
-
 .about-us__container {
   background-color: #1E2C30;
   color: #FFFFFF;
   position: relative;
 }
-
 .about-us__describe {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 15px;
 }
 @media screen and (min-width: 768px) {
   .about-us__describe {
-    margin-left: 50%;
-    margin-right: 20px;
+    margin-left: 40%;
   }
 }
 @media screen and (min-width: 1200px) {
   .about-us__describe {
-    margin-top: 34px;
-    margin-bottom: 34px;
-    margin-right: 70px;
+    margin-left: 45%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 30px;
   }
 }
-
 .about-us__text {
   color: #FFFFFF;
+  text-align: justify;
 }
-
 @media screen and (min-width: 768px) {
   .about-us__picture {
-    width: 40%;
+    width: 30%;
     height: auto;
     position: absolute;
-    top: 55px;
-    left: 30px;
+    top: 15px;
+    left: 15px;
   }
 }
 @media screen and (min-width: 1200px) {
   .about-us__picture {
-    position: absolute;
-    top: -51px;
+    width: 35%;
+    top: -40px;
     left: 60px;
   }
-}
-
-.position {
-  text-align: center;
-  max-width: 660px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .experts__list {
@@ -1609,7 +1591,7 @@ h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 40px;
+  margin-top: 15px;
 }
 @media screen and (min-width: 768px) {
   .experts__list {
@@ -1617,27 +1599,32 @@ h6 {
         flex-wrap: nowrap;
   }
 }
-
+@media screen and (min-width: 1200px) {
+  .experts__list {
+    margin-top: 30px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .experts__item {
     width: 370px;
   }
 }
-
 .experts__photo {
   width: 100%;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
-
-.experts__describe {
-  text-align: center;
+@media screen and (min-width: 1200px) {
+  .experts__photo {
+    margin-bottom: 30px;
+  }
 }
-
 .experts__text {
   line-height: 1.6;
   letter-spacing: 0;
 }
-
+.experts__describe {
+  text-align: center;
+}
 .experts__social {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1646,29 +1633,40 @@ h6 {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 30px;
-  margin-top: 25px;
+  margin-top: 15px;
+}
+@media screen and (min-width: 1200px) {
+  .experts__social {
+    margin-top: 30px;
+  }
+}
+
+.position {
+  text-align: center;
+  max-width: 660px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .subscription__container {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 @media screen and (min-width: 768px) {
   .subscription__container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 30px;
+    gap: 15px;
   }
 }
 @media screen and (min-width: 1200px) {
   .subscription__container {
     gap: 50px;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
   }
 }
-
 .subscription__describe {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 @media screen and (min-width: 768px) {
   .subscription__describe {
@@ -1677,57 +1675,51 @@ h6 {
 }
 @media screen and (min-width: 1200px) {
   .subscription__describe {
-    margin-bottom: 55px;
+    margin-bottom: 30px;
     max-width: 504px;
   }
 }
-
 @media screen and (min-width: 768px) {
   .subscription__describe .before-title,
   .subscription__describe .title {
     text-align: left;
   }
 }
-
 .subscription__text {
   text-align: justify;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 @media screen and (min-width: 1200px) {
   .subscription__text {
-    margin-bottom: 55px;
+    margin-bottom: 30px;
   }
 }
-
 @media screen and (min-width: 768px) {
   .subscription__image {
     width: auto;
     height: 100%;
   }
 }
-
 .subscription__pictures {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 30px;
+  gap: 15px;
 }
 @media screen and (min-width: 1200px) {
   .subscription__pictures {
     gap: 45px;
   }
 }
-
 .subscription__button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-
 .subscription__button .make-reservation__button {
-  padding: 23px 72px;
+  padding: 20px 70px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1740,17 +1732,15 @@ h6 {
             justify-content: space-between;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .visiting__picture {
-    background-image: url(../images/visitting-bg-min.jpg);
+    background-image: url(../images/visiting-bg-min.jpg);
     margin-right: 120px;
     position: relative;
     width: 500px;
     height: 565px;
   }
 }
-
 .visiting__photo {
   position: absolute;
   top: 45px;
@@ -1758,7 +1748,6 @@ h6 {
   -webkit-box-shadow: 0px 20px 40px rgba(42, 68, 75, 0.2);
           box-shadow: 0px 20px 40px rgba(42, 68, 75, 0.2);
 }
-
 @media screen and (min-width: 1200px) {
   .visiting__content {
     max-width: 535px;
@@ -1766,24 +1755,20 @@ h6 {
     margin-top: 25px;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .visiting__content .before-title,
   .visiting__content .title {
     text-align: left;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .visiting__text {
     margin-bottom: 45px;
   }
 }
-
 .visiting__list {
   padding: 0;
 }
-
 .visiting__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1798,11 +1783,9 @@ h6 {
     margin-bottom: 30px;
   }
 }
-
 .visiting__item:last-child {
   margin-bottom: 0;
 }
-
 .visiting__icon {
   margin-right: 30px;
   width: 65px;
@@ -1818,7 +1801,6 @@ h6 {
       -ms-flex-align: center;
           align-items: center;
 }
-
 .visiting__contacts .before-title {
   line-height: 1.25%;
   letter-spacing: 0.06em;
