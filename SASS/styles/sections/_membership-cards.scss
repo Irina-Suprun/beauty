@@ -1,0 +1,105 @@
+.membership {
+    .before-title {
+        text-align: center;
+    }
+
+    &__cards {
+        margin-top: $spacing-secondary*3;
+
+
+        @include tablet {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        @include desktop {
+            margin-top: $spacing-secondary*6;
+        }
+    }
+
+    &__card {
+        position: relative;
+        background-color: $color-1;
+        padding: $spacing-secondary*3;
+
+        @include tablet {
+            width: 360px;
+        }
+
+        @include desktop {
+            width: 580px;
+            padding: $spacing-secondary*6;
+        }
+
+        .title {
+            color: $color-white;
+            text-align: justify;
+            margin-bottom: $spacing-secondary*3;
+
+            @include desktop {
+                margin-bottom: $spacing-secondary*6;
+            }
+        }
+    }
+
+    &__card:first-child {
+        margin-bottom: $spacing-secondary*3;
+
+        @include tablet {
+            margin-bottom: 0;
+        }
+    }
+
+    &__item {
+        display: flex;
+        gap: 15px;
+        margin-bottom: $spacing-secondary*3;
+    }
+
+    &__item-text {
+        color: $color-white;
+    }
+
+    .button {
+        margin-left: 0;
+    }
+
+    &__cost {
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-color: $color-4;
+        width: 90px;
+        height: 90px;
+        color: $color-white;
+        text-align: center;
+
+        @include desktop {
+            width: 140px;
+            height: 140px;
+        }
+
+        p {
+            font-size: $font-size-xl;
+            font-weight: 800;
+
+            @include desktop {
+                font-size: $font-size-maxi;
+            }
+        }
+    }
+
+    &__type {
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+        writing-mode: vertical-rl;
+        font-weight: 800;
+        font-size: $font-size-xl*2;
+
+        @include desktop {
+            bottom: 30px;
+            right: 30px;
+        }
+    }
+}

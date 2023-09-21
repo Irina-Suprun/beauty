@@ -8,6 +8,7 @@
 @import "./styles/components/container";
 @import "./styles/components/title";
 @import "./styles/components/button";
+@import "./styles/components/form";
 
 @import "./styles/templates/variables";
 @import "./styles/templates/header";
@@ -30,6 +31,10 @@
 @import "./styles/sections/about/share-us";
 @import "./styles/sections/get-in-touch";
 @import "./styles/sections/schedule";
+@import "./styles/sections/about-service";
+@import "./styles/sections/membership-cards";
+@import "./styles/sections/appointment";
+
 
 
 body {

@@ -182,6 +182,51 @@ h6 {
   }
 }
 
+.field {
+  margin-bottom: 15px;
+  position: relative;
+}
+.field__input {
+  padding-left: 55px;
+  width: 100%;
+  height: 65px;
+  border: solid 1px #5C8692;
+  font-family: Manrope;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6;
+  letter-spacing: 0;
+  color: #555555;
+}
+.field__icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.field__textarea {
+  padding-left: 55px;
+  padding-top: 15px;
+  width: 100%;
+  height: 135px;
+  border: solid 1px #5C8692;
+  resize: none;
+  font-family: Manrope;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6;
+  letter-spacing: 0;
+  color: #555555;
+}
+.field__icon-textarea {
+  position: absolute;
+  left: 15px;
+  top: 23%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
 .header__box {
   padding: 15px;
 }
@@ -1144,6 +1189,9 @@ h6 {
 .benefits {
   text-align: left;
 }
+.benefits .before-title {
+  text-align: center;
+}
 .benefits__list {
   margin-top: 15px;
   display: -webkit-box;
@@ -1366,51 +1414,6 @@ h6 {
 
 .discount-container__icon {
   margin: 10px auto;
-}
-
-.field {
-  margin-bottom: 15px;
-  position: relative;
-}
-.field__input {
-  padding-left: 55px;
-  width: 100%;
-  height: 65px;
-  border: solid 1px #5C8692;
-  font-family: Manrope;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.6;
-  letter-spacing: 0;
-  color: #555555;
-}
-.field__icon {
-  position: absolute;
-  left: 15px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-.field__textarea {
-  padding-left: 55px;
-  padding-top: 15px;
-  width: 100%;
-  height: 135px;
-  border: solid 1px #5C8692;
-  resize: none;
-  font-family: Manrope;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.6;
-  letter-spacing: 0;
-  color: #555555;
-}
-.field__icon-textarea {
-  position: absolute;
-  left: 15px;
-  top: 23%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
 }
 
 .discount-services {
@@ -1846,6 +1849,280 @@ h6 {
 @media screen and (min-width: 1200px) {
   .schedules__registration {
     padding: 100px;
+  }
+}
+
+.about-service {
+  background-color: #EBF3F5;
+}
+@media screen and (min-width: 1200px) {
+  .about-service {
+    position: relative;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about-service .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
+  }
+}
+.about-service .title {
+  text-align: justify;
+}
+@media screen and (min-width: 1200px) {
+  .about-service__content {
+    max-width: calc((100% - 30px) / 2);
+  }
+}
+.about-service__text {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+@media screen and (min-width: 1200px) {
+  .about-service__text {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+.about-service__list {
+  margin-top: 15px;
+}
+@media screen and (min-width: 1200px) {
+  .about-service__list {
+    margin-top: 30px;
+  }
+}
+.about-service__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 1200px) {
+  .about-service__item {
+    gap: 30px;
+  }
+}
+.about-service__item-content .title {
+  text-align: justify;
+  font-family: Manrope;
+  line-height: 2;
+}
+.about-service__video {
+  position: relative;
+}
+@media screen and (min-width: 1200px) {
+  .about-service__video {
+    position: absolute;
+    top: 120px;
+    right: 0;
+    max-width: calc((100% - 50px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about-service__picture {
+    height: 100%;
+  }
+}
+.about-service__icon-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.membership .before-title {
+  text-align: center;
+}
+.membership__cards {
+  margin-top: 15px;
+}
+@media screen and (min-width: 768px) {
+  .membership__cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .membership__cards {
+    margin-top: 30px;
+  }
+}
+.membership__card {
+  position: relative;
+  background-color: #1E2C30;
+  padding: 15px;
+}
+@media screen and (min-width: 768px) {
+  .membership__card {
+    width: 360px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .membership__card {
+    width: 580px;
+    padding: 30px;
+  }
+}
+.membership__card .title {
+  color: #FFFFFF;
+  text-align: justify;
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 1200px) {
+  .membership__card .title {
+    margin-bottom: 30px;
+  }
+}
+.membership__card:first-child {
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .membership__card:first-child {
+    margin-bottom: 0;
+  }
+}
+.membership__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+.membership__item-text {
+  color: #FFFFFF;
+}
+.membership .button {
+  margin-left: 0;
+}
+.membership__cost {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #111E22;
+  width: 90px;
+  height: 90px;
+  color: #FFFFFF;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .membership__cost {
+    width: 140px;
+    height: 140px;
+  }
+}
+.membership__cost p {
+  font-size: 20px;
+  font-weight: 800;
+}
+@media screen and (min-width: 1200px) {
+  .membership__cost p {
+    font-size: 55px;
+  }
+}
+.membership__type {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  font-weight: 800;
+  font-size: 40px;
+}
+@media screen and (min-width: 1200px) {
+  .membership__type {
+    bottom: 30px;
+    right: 30px;
+  }
+}
+
+.appointment {
+  background-color: #EBF3F5;
+}
+.appointment .before-title {
+  text-align: center;
+}
+.appointment__text {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  max-width: 620px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.appointment__registration {
+  background-color: #FFFFFF;
+  padding: 10px;
+  max-width: 1010px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .appointment__registration {
+    padding: 50px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .appointment__registration {
+    padding: 100px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .appointment__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 15px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .appointment__form .field {
+    width: calc((100% - 15px) / 2);
+    margin-bottom: 0;
+    margin-right: 0;
+  }
+}
+.appointment__form .field__textarea {
+  height: 65px;
+  padding-top: 0;
+}
+@media screen and (min-width: 768px) {
+  .appointment__form .button {
+    width: calc((100% - 15px) / 2);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+.appointment__personal {
+  color: #5C8692;
+  text-align: center;
+  margin-top: 15px;
+}
+@media screen and (min-width: 768px) {
+  .appointment__personal {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
   }
 }
 

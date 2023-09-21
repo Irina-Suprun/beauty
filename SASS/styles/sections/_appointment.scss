@@ -1,0 +1,75 @@
+.appointment {
+    background-color: $bg-color-section;
+
+    .before-title {
+        text-align: center;
+    }
+
+    &__text {
+        text-align: center;
+        margin-top: $spacing-secondary*3;
+        margin-bottom: $spacing-secondary*3;
+        max-width: 620px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__registration {
+        background-color: $bg-color-base;
+        padding: $spacing-secondary*2;
+        max-width: 1010px;
+        margin-left: auto;
+        margin-right: auto;
+
+        @include tablet {
+            padding: $spacing-secondary*10;
+        }
+
+        @include desktop {
+            padding: $spacing-secondary*20;
+        }
+    }
+
+    &__form {
+        @include tablet {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .field {
+            @include tablet {
+                width: calc((100% - 15px) / 2);
+                margin-bottom: 0;
+                margin-right: 0;
+            }
+
+            &__textarea {
+                height: 65px;
+                padding-top: 0;
+            }
+        }
+
+        .button {
+            @include tablet {
+                width: calc((100% - 15px) / 2);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+
+    &__personal {
+        color: $color-2;
+        text-align: center;
+        margin-top: $spacing-secondary*3;
+
+        @include tablet {
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 0;
+        }
+    }
+}

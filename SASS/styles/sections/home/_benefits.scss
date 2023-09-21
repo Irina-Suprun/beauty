@@ -1,6 +1,10 @@
 .benefits {
     text-align: left;
 
+    .before-title {
+        text-align: center;
+    }
+
     &__list {
         margin-top: $spacing-secondary*3;
         display: flex;
