@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beautyness</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/main.min.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header__box">
+        <div class="left-side">
+          <strong
+            ><a href="../index.html" class="logo link">
+              <svg class="logo__icon" width="33" height="33">
+                <use href="../images/icons.svg#icon-Logo"></use>
+              </svg>
+              Beautyness
+            </a></strong
+          >
+
+          <a href="tel:+221234567890" class="contact link">
+            <svg class="contact__icon" width="21" height="21">
+              <use href="../images/icons.svg#icon-Vector"></use>
+            </svg>
+            Call Us - (+22) 123-456-7890
+          </a>
+        </div>
+
+        <div class="right-side">
+          <nav class="main-nav">
+            <ul class="site-nav list">
+              <li class="site-nav__item">
+                <a href="../index.html" class="site-nav__link link">Home</a>
+              </li>
+              <li class="site-nav__item">
+                <div class="dropdown">
+                  <p class="site-nav__link">Pages</p>
+                  <ul class="dropdown-content list">
+                    <li class="dropdown-content__item">
+                      <a
+                        href="./services-single.html"
+                        class="link dropdown-content__link"
+                        >Services-Single</a
+                      >
+                    </li>
+                    <li class="dropdown-content__item">
+                      <a
+                        href="./team.html"
+                        class="link dropdown-content__link"
+                        >Team</a
+                      >
+                    </li>
+                    <li class="dropdown-content__item">
+                      <a
+                        href="./team-single.html"
+                        class="link dropdown-content__link"
+                        >Team-Single</a
+                      >
+                    </li>
+                    <li class="dropdown-content__item">
+                      <a
+                        href="./blog.html"
+                        class="link dropdown-content__link"
+                        >Blog</a
+                      >
+                    </li>
+                    <li class="dropdown-content__item">
+                      <a
+                        href="./blog-single.html"
+                        class="link dropdown-content__link"
+                        >Blog-Single</a
+                      >
+                    </li>
+                    <li class="dropdown-content__item">
+                      <a
+                        href="./locations.html"
+                        class="link dropdown-content__link"
+                        >Locations</a
+                      >
+                    </li>
+                    <li class="dropdown-content__item">
+                      <a
+                        href="./error.html"
+                        class="link dropdown-content__link"
+                        >404</a
+                      >
+                    </li>
+                    <li class="dropdown-content__item">
+                      <a
+                        href="./password-protected.html"
+                        class="link dropdown-content__link"
+                        >Password-Protected</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="site-nav__item">
+                <a href="./about.html" class="site-nav__link link">About</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="./services.html" class="site-nav__link link"
+                  >Services</a
+                >
+              </li>
+              <li class="site-nav__item">
+                <a href="./contact.html" class="site-nav__link link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="right-side__section">
+            <ul class="social list">
+              <li>
+                <a href="" class="social__link link">
+                  <svg class="social__icon" width="20" height="20">
+                    <use href="../images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="" class="social__link link">
+                  <svg class="social__icon" width="20" height="20">
+                    <use href="../images/icons.svg#icon-twit"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="" class="social__link link">
+                  <svg class="social__icon" width="20" height="20">
+                    <use href="../images/icons.svg#icon-in"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <button type="button" class="button header__button">
+              <svg class="button__icon" width="13.5" height="15">
+                <use href="../images/icons.svg#icon-Icon-reservation"></use>
+              </svg>
+              RESERVATION
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+      <!-- hero -->
+      <section class="section hero">
+        <div class="container hero__container">
+          <p class="hero-before-title">THE BEAUTY TEAM</p>
+          <h2 class="hero-title">Beautyness Experts</h2>
+        </div>
+      </section>
+
+      <!-- EXPERTS -->
+      <section class="section experts">
+        <div class="container">
+          <div class="position">
+            <p class="before-title">MEET OUR EXPERTS</p>
+            <h3 class="title">The amazing women behind Beautyness</h3>
+          </div>
+          <ul class="experts__list list">
+            <li class="experts__item">
+              <img
+                src="../images/expert1-min.jpg"
+                alt="photo"
+                class="experts__photo"
+              />
+              <div class="experts__describe">
+                <h6 class="title">Sherlin D’Cruz</h6>
+                <p class="before-title">Beautyness Expert</p>
+                <p class="experts__text">
+                  I must explain to you how all this mistaken idea of denouncing
+                  pleasure that will raise praising pain
+                </p>
+                <ul class="experts__social list">
+                  <li>
+                    <a href="" class="social__link link">
+                      <svg class="social__icon" width="20" height="20">
+                        <use href="../images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="" class="social__link link">
+                      <svg class="social__icon" width="20" height="20">
+                        <use href="../images/icons.svg#icon-twit"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="" class="social__link link">
+                      <svg class="social__icon" width="20" height="20">
+                        <use href="../images/icons.svg#icon-in"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="experts__item">
+              <img
+                src="../images/expert2-min.jpg"
+                alt="photo"
+                class="experts__photo"
+              />
+              <div class="experts__describe">
+                <h6 class="title">Maria Sharapova</h6>
+                <p class="before-title">Beautyness Expert</p>
+                <p class="experts__text">
+                  I must explain to you how all this mistaken idea of denouncing
+                  pleasure that will raise praising pain
+                </p>
+                <ul class="experts__social list">
+                  <li>
+                    <a href="" class="social__link link">
+                      <svg class="social__icon" width="20" height="20">
+                        <use href="../images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="" class="social__link link">
+                      <svg class="social__icon" width="20" height="20">
+                        <use href="../images/icons.svg#icon-twit"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="" class="social__link link">
+                      <svg class="social__icon" width="20" height="20">
+                        <use href="../images/icons.svg#icon-in"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="experts__item">
+              <img
+                src="../images/expert3-min.jpg"
+                alt="photo"
+                class="experts__photo"
+              />
+              <div class="experts__describe">
+                <h6 class="title">Angeline Jenifer</h6>
+                <p class="before-title">Beautyness Expert</p>
+                <p class="experts__text">
+                  I must explain to you how all this mistaken idea of denouncing
+                  pleasure that will raise praising pain
+                </p>
+                <ul class="experts__social list">
+                  <li>
+                    <a href="" class="social__link link">
+                      <svg class="social__icon" width="20" height="20">
+                        <use href="../images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="" class="social__link link">
+                      <svg class="social__icon" width="20" height="20">
+                        <use href="../images/icons.svg#icon-twit"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="" class="social__link link">
+                      <svg class="social__icon" width="20" height="20">
+                        <use href="../images/icons.svg#icon-in"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+             <li class="experts__item">
+              <img
+                src="../images/expert4-min.jpg"
+                alt="photo"
+                class="experts__photo"
+              />
+              <div class="experts__describe">
+                <h6 class="title">Bonham Carter</h6>
+                <p class="before-title">Beautyness Expert</p>
+                <p class="experts__text">
+                  I must explain to you how all this mistaken idea of denouncing
+                  pleasure that will raise praising pain
+                </p>
+                <ul class="experts__social list">
+                  <li>
+                    <a href="" class="social__link link">
+                      <svg class="social__icon" width="20" height="20">
+                        <use href="../images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="" class="social__link link">
+                      <svg class="social__icon" width="20" height="20">
+                        <use href="../images/icons.svg#icon-twit"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="" class="social__link link">
+                      <svg class="social__icon" width="20" height="20">
+                        <use href="../images/icons.svg#icon-in"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+             <li class="experts__item">
+              <img
+                src="../images/expert5-min.jpg"
+                alt="photo"
+                class="experts__photo"
+              />
+              <div class="experts__describe">
+                <h6 class="title">Evanna Lynch</h6>
+                <p class="before-title">Beautyness Expert</p>
+                <p class="experts__text">
+                  I must explain to you how all this mistaken idea of denouncing
+                  pleasure that will raise praising pain
+                </p>
+                <ul class="experts__social list">
+                  <li>
+                    <a href="" class="social__link link">
+                      <svg class="social__icon" width="20" height="20">
+                        <use href="../images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="" class="social__link link">
+                      <svg class="social__icon" width="20" height="20">
+                        <use href="../images/icons.svg#icon-twit"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="" class="social__link link">
+                      <svg class="social__icon" width="20" height="20">
+                        <use href="../images/icons.svg#icon-in"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+             <li class="experts__item">
+              <img
+                src="../images/expert6-min.jpg"
+                alt="photo"
+                class="experts__photo"
+              />
+              <div class="experts__describe">
+                <h6 class="title">Natalia Tena</h6>
+                <p class="before-title">Beautyness Expert</p>
+                <p class="experts__text">
+                  I must explain to you how all this mistaken idea of denouncing
+                  pleasure that will raise praising pain
+                </p>
+                <ul class="experts__social list">
+                  <li>
+                    <a href="" class="social__link link">
+                      <svg class="social__icon" width="20" height="20">
+                        <use href="../images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="" class="social__link link">
+                      <svg class="social__icon" width="20" height="20">
+                        <use href="../images/icons.svg#icon-twit"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="" class="social__link link">
+                      <svg class="social__icon" width="20" height="20">
+                        <use href="../images/icons.svg#icon-in"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__social-box">
+          <a href="" class="footer__logo link">
+            <svg class="footer__logo-icon" width="65" height="65">
+              <use href="../images/icons.svg#icon-Logo_footer"></use>
+            </svg>
+            Beautyness
+          </a>
+          <ul class="footer__social list">
+            <li>
+              <a href="" class="footer__social-link link">
+                <svg class="social__icon" width="12" height="22">
+                  <use href="../images/icons.svg#icon-face_f"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" class="footer__social-link link">
+                <svg class="social__icon" width="18" height="22">
+                  <use href="../images/icons.svg#icon-twit_f"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" class="footer__social-link link">
+                <svg class="social__icon" width="16" height="22">
+                  <use href="../images/icons.svg#icon-in_f"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" class="footer__social-link link">
+                <svg class="social__icon" width="17" height="23">
+                  <use href="../images/icons.svg#icon-instagram_f"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="navigation">
+          <div class="footer-navigate">
+            <div class="box-explore">
+              <h3 class="footer-navigate__title">Explore</h3>
+              <ul class="footer-navigate__list list">
+                <li class="footer-navigate__item">
+                  <a href="../index.html" class="footer-navigate__link link"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a href="./about.html" class="footer-navigate__link link"
+                    >About Us</a
+                  >
+                </li>
+                <li>
+                  <a href="./services.html" class="footer-navigate__link link"
+                    >Services</a
+                  >
+                </li>
+                <li>
+                  <a href="" class="footer-navigate__link link">Appointments</a>
+                </li>
+                <li>
+                  <a href="./blog.html" class="footer-navigate__link link"
+                    >Blog</a
+                  >
+                </li>
+
+                <li>
+                  <a href="./contact.html" class="footer-navigate__link link"
+                    >Contact Us</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="box-utility">
+              <h3 class="footer-navigate__title">Utility Pages</h3>
+              <ul class="footer-navigate__list list">
+                <li>
+                  <a href="" class="footer-navigate__link link">Start here </a>
+                </li>
+                <li>
+                  <a href="" class="footer-navigate__link link">Style guide </a>
+                </li>
+                <li>
+                  <a href="./error.html" class="footer-navigate__link link"
+                    >404 not found</a
+                  >
+                </li>
+                <li>
+                  <a href="" class="footer-navigate__link link"
+                    >Password protected
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="footer-navigate__link link">Licenses </a>
+                </li>
+
+                <li>
+                  <a href="" class="footer-navigate__link link">Changelog</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="address-box">
+            <h3 class="footer-navigate__title">Keep in Touch</h3>
+            <address>
+              <table class="address">
+                <tr>
+                  <td rowspan="2" class="address__text">Address:</td>
+                  <td rowspan="2">
+                    <a
+                      href="https://www.google.com/maps/search/24A+Kingston+St,+Los+Vegas+NC+28202,+USA./@34.7063281,-105.9799531,5z/data=!3m1!4b1?entry=ttu"
+                      class="address__link link"
+                      >24A Kingston St, Los Vegas<br />
+                      NC 28202, USA.</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="address__text"></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td class="address__text">Mail :</td>
+                  <td>
+                    <a href="mailto:info@example.com" class="address__link link"
+                      >support@doctors.com</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="address__text">Phone :</td>
+                  <td>
+                    <a href="tel:+221234567900" class="address__link link"
+                      >(+22) 123 - 4567 - 900</a
+                    >
+                  </td>
+                </tr>
+              </table>
+            </address>
+          </div>
+          <div class="schedule">
+            <h3 class="footer-navigate__title">Working Hours</h3>
+            <ul class="footer-navigate__list list">
+              <li class="schedule__item">Mon to Fri: 7am - 6pm</li>
+              <li class="schedule__item">Sat: 9am - 7pm</li>
+              <li class="schedule__item">Sun: 9am - 6pm</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <h4 class="copyright">
+        &#169; Copyright 2021. Drafted by Victor Themes.
+      </h4>
+    </footer>
+  </body>
+</html>
