@@ -1432,7 +1432,7 @@ h6 {
   text-align: center;
 }
 .blog .before-title {
-  text-align: center;
+  text-align: left;
 }
 .blog__list {
   margin-top: 15px;
@@ -1445,7 +1445,7 @@ h6 {
     gap: 10px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1453,6 +1453,9 @@ h6 {
     gap: 45px;
     margin-bottom: 60px;
   }
+}
+.blog__list:first-child {
+  margin-top: 0;
 }
 .blog__item {
   background-color: #EDF5F7;
@@ -1479,12 +1482,15 @@ h6 {
 }
 .blog__pre-title {
   margin-bottom: 10px;
-  text-align: center;
+  text-align: left;
   font-weight: 800;
   font-size: 13px;
   line-height: 1.25;
   letter-spacing: 0.06em;
   color: #5C8692;
+}
+.blog .title {
+  text-align: left;
 }
 .blog__describe {
   text-align: justify;
@@ -2164,7 +2170,8 @@ h6 {
     width: 100%;
   }
 }
-.single-expert .before-title, .single-expert .title {
+.single-expert .before-title,
+.single-expert .title {
   text-align: left;
 }
 .single-expert__text {

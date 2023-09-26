@@ -4,86 +4,102 @@
       display: flex;
       gap: 30px;
     }
-        @include desktop {
-          gap: 80px;
-        }
+
+    @include desktop {
+      gap: 80px;
+    }
   }
-    &__wrapper-photo {
-      @include tablet {
-        width: 50%;
-padding-top: $spacing-secondary*2;
-      }
-            @include desktop {
-              width: 100%;
-padding: 0;
-            }
+
+  &__wrapper-photo {
+    @include tablet {
+      width: 50%;
+      padding-top: $spacing-secondary*2;
     }
-    &__photo {
+
+    @include desktop {
       width: 100%;
+      padding: 0;
     }
-  
+  }
+
+  &__photo {
+    width: 100%;
+  }
+
   .position {
     @include tablet {
-        width: 50%;
-      }
-             @include desktop {
-               width: 100%;
-             }
+      width: 50%;
+    }
+
+    @include desktop {
+      width: 100%;
+    }
   }
-  .before-title, .title {
+
+  .before-title,
+  .title {
     text-align: left;
   }
+
   &__text {
     text-align: justify;
     margin-top: $spacing-secondary*3;
+
     @include desktop {
-        margin-top: $spacing-secondary*6;
+      margin-top: $spacing-secondary*6;
     }
   }
+
   &__list {
     margin-top: $spacing-secondary*3;
-    
-        @include desktop {
-            margin-top: $spacing-secondary*6;
-        }
+
+    @include desktop {
+      margin-top: $spacing-secondary*6;
+    }
   }
+
   &__item {
     display: flex;
     align-items: center;
   }
+
   &__item:first-child {
-      margin-bottom: $spacing-secondary*2;
+    margin-bottom: $spacing-secondary*2;
   }
 
   &__wrapper-icon {
     margin-right: $spacing-secondary*3;
-        width: 45px;
-        height: 45px;
-        border: $border-contacts;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        @include desktop {
-width: 65px;
-    height: 65px;
-        }
-  }
-.button {
-  margin-left: 0;
-  margin-top: $spacing-secondary*3;
-  margin-bottom: $spacing-secondary*3;
-  @include desktop {
-margin-top: $spacing-secondary*6;
-margin-bottom: $spacing-secondary*6;
-  }
-}
-&__social {
-  display: flex;
-  justify-content: left;
-  gap: 30px;
+    width: 45px;
+    height: 45px;
+    border: $border-contacts;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-  @include desktop {
-    margin-top: $spacing-secondary*6;
+    @include desktop {
+      width: 65px;
+      height: 65px;
+    }
   }
-}
+
+  .button {
+    margin-left: 0;
+    margin-top: $spacing-secondary*3;
+    margin-bottom: $spacing-secondary*3;
+
+    @include desktop {
+      margin-top: $spacing-secondary*6;
+      margin-bottom: $spacing-secondary*6;
+    }
+  }
+
+  &__social {
+    display: flex;
+    justify-content: left;
+    gap: 30px;
+
+    @include desktop {
+      margin-top: $spacing-secondary*6;
+    }
+  }
 }

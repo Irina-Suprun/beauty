@@ -2,7 +2,7 @@
     text-align: center;
 
     .before-title {
-        text-align: center;
+        text-align: left;
     }
 
     &__list {
@@ -12,13 +12,17 @@
             display: flex;
             gap: 10px;
             flex-wrap: wrap;
-            margin-bottom: $spacing-secondary*6;
+            margin-bottom: $spacing-secondary*3;
         }
 
         @include desktop {
             gap: 45px;
             margin-bottom: $spacing-secondary*12;
         }
+    }
+
+    &__list:first-child {
+        margin-top: 0;
     }
 
     &__item {
@@ -47,12 +51,16 @@
 
     &__pre-title {
         margin-bottom: $spacing-secondary*2;
-        text-align: center;
+        text-align: left;
         font-weight: 800;
         font-size: 13px;
         line-height: $line-height-base;
         letter-spacing: 0.06em;
         color: $color-2;
+    }
+
+    .title {
+        text-align: left;
     }
 
     &__describe {
@@ -62,5 +70,6 @@
 
     &__link {
         margin-top: 0;
+
     }
 }
