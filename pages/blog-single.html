@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beautyness</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/main.min.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header__box">
+        <div class="left-side">
+          <strong
+            ><a href="../index.html" class="logo link">
+              <svg class="logo__icon" width="33" height="33">
+                <use href="../images/icons.svg#icon-Logo"></use>
+              </svg>
+              Beautyness
+            </a></strong
+          >
+
+          <a href="tel:+221234567890" class="contact link">
+            <svg class="contact__icon" width="21" height="21">
+              <use href="../images/icons.svg#icon-Vector"></use>
+            </svg>
+            Call Us - (+22) 123-456-7890
+          </a>
+        </div>
+
+        <div class="right-side">
+          <nav class="main-nav">
+            <ul class="site-nav list">
+              <li class="site-nav__item">
+                <a href="../index.html" class="site-nav__link link">Home</a>
+              </li>
+              <li class="site-nav__item">
+                <div class="dropdown">
+                  <p class="site-nav__link">Pages</p>
+                  <ul class="dropdown-content list">
+                    <li class="dropdown-content__item">
+                      <a
+                        href="./services-single.html"
+                        class="link dropdown-content__link"
+                        >Services-Single</a
+                      >
+                    </li>
+                    <li class="dropdown-content__item">
+                      <a href="./team.html" class="link dropdown-content__link"
+                        >Team</a
+                      >
+                    </li>
+                    <li class="dropdown-content__item">
+                      <a
+                        href="./team-single.html"
+                        class="link dropdown-content__link"
+                        >Team-Single</a
+                      >
+                    </li>
+                    <li class="dropdown-content__item">
+                      <a href="./blog.html" class="link dropdown-content__link"
+                        >Blog</a
+                      >
+                    </li>
+                    <li class="dropdown-content__item">
+                      <a
+                        href="./blog-single.html"
+                        class="link dropdown-content__link"
+                        >Blog-Single</a
+                      >
+                    </li>
+                    <li class="dropdown-content__item">
+                      <a
+                        href="./locations.html"
+                        class="link dropdown-content__link"
+                        >Locations</a
+                      >
+                    </li>
+                    <li class="dropdown-content__item">
+                      <a href="./error.html" class="link dropdown-content__link"
+                        >404</a
+                      >
+                    </li>
+                    <li class="dropdown-content__item">
+                      <a
+                        href="./password-protected.html"
+                        class="link dropdown-content__link"
+                        >Password-Protected</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="site-nav__item">
+                <a href="./about.html" class="site-nav__link link">About</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="./services.html" class="site-nav__link link"
+                  >Services</a
+                >
+              </li>
+              <li class="site-nav__item">
+                <a href="./contact.html" class="site-nav__link link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="right-side__section">
+            <ul class="social list">
+              <li>
+                <a href="" class="social__link link">
+                  <svg class="social__icon" width="20" height="20">
+                    <use href="../images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="" class="social__link link">
+                  <svg class="social__icon" width="20" height="20">
+                    <use href="../images/icons.svg#icon-twit"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="" class="social__link link">
+                  <svg class="social__icon" width="20" height="20">
+                    <use href="../images/icons.svg#icon-in"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <button type="button" class="button header__button">
+              <svg class="button__icon" width="13.5" height="15">
+                <use href="../images/icons.svg#icon-Icon-reservation"></use>
+              </svg>
+              RESERVATION
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+      <!-- hero -->
+      <section class="section hero">
+        <div class="container hero__container blog-single__hero-container">
+          <p class="hero-before-title">By Jessica Smith / Beauty & Wellness</p>
+          <h2 class="hero-title">
+            Certified Health Professionals & Community Medicine
+          </h2>
+        </div>
+      </section>
+
+      <!-- BLOG-SINGLE -->
+      <section class="blog-single">
+        <div class="container">
+          <img
+            src="../images/blog-single1-min.jpg"
+            alt="photo-woman"
+            class="blog-single__main-picture"
+          />
+          <div class="blog-single__content">
+            <div class="blog-single__author-wrapper">
+              <div class="blog-single__author">
+                <img
+                  src="../images/blog-single2-min.jpg"
+                  alt="photo-author"
+                  class="blog-single__photo-author"
+                />
+                <div class="blog-single__author-info">
+                  <h6 class="title">Author - Chris Jericho</h6>
+                  <p class="blog-single__author-profession">
+                    Chairman & Director
+                  </p>
+                  <button class="button">BEAUTY HEALTH</button>
+                </div>
+              </div>
+              <p class="blog-single__author-text">
+                If you are going to use a passage of Lorem Ipsum, you need to be
+                sure there isn't anything embarrassing hidden in the middle of
+                text. All the Lorem Ipsum generators on the Internet tend tools
+                that generator on the Internet.
+              </p>
+              <div class="blog-single__author-social">
+                <h7 class="title">Share us on:</h7>
+                <ul class="social list">
+                  <li class="blog-single__item-social">
+                    <a href="" class="social__link link">
+                      <svg class="social__icon" width="20" height="20">
+                        <use href="../images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="blog-single__item-social">
+                    <a href="" class="social__link link">
+                      <svg class="social__icon" width="20" height="20">
+                        <use href="../images/icons.svg#icon-twit"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="blog-single__item-social">
+                    <a href="" class="social__link link">
+                      <svg class="social__icon" width="20" height="20">
+                        <use href="../images/icons.svg#icon-in"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="blog-single__item-social">
+                    <a href="" class="social__link link">
+                      <svg class="social__icon" width="20" height="20">
+                        <use href="../images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="blog-single__describe-wrapper">
+              <p class="blog-single__describe-text">
+                Uniquely matrix economically sound value through cooperative
+                technology. Competently parallel task fully researched data and
+                enterprise process improvements. Collaboratively expedite
+                quality manufactured products via client-focused results quickly
+                communicate enabled technology and turnkey leadership skills.
+                Uniquely enable accurate supply chains rather than friction
+                technology.
+              </p>
+              <h3 class="title">Take a look to our collections</h3>
+              <p class="blog-single__describe-text">
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour, or randomized words which don't look even
+                slightly believable. If you are going to use a passage of Lorem
+                Ipsum, you need to be sure there isn't anything embarrassing.
+              </p>
+              <ul class="blog-single__describe-list">
+                <li class="blog-single__describe-item">
+                  <p>
+                    Health Care is committed to the pillars of academic health
+                    care
+                  </p>
+                </li>
+                <li class="blog-single__describe-item">
+                  <p>
+                    We will strengthen local health care and improve delivery
+                    system
+                  </p>
+                </li>
+                <li class="blog-single__describe-item">
+                  <p>
+                    Providing optimal multidisciplinary health care and
+                    developing
+                  </p>
+                </li>
+              </ul>
+              <img
+                src="../images/blog-single3-min.jpg"
+                alt="photo"
+                class="blog-single__picture"
+              />
+              <p class="blog-single__caption">Face Massage - Skin Care</p>
+              <h4 class="title">Feel Like Home With Best Beauty Tips</h4>
+              <p class="blog-single__describe-text">
+                It was popularized in the 1960s with the release of Learjet
+                containing Lorem Ipsum passages, and more recently with desktop
+                publishing software like Adas PageMaker including versions of
+                Lorem Ipsum.
+              </p>
+              <div class="blog-single__rule-block">
+                <div class="square"></div>
+                <div class="blog-single__rule-wrapper">
+                  <p class="blog-single__rule-text">
+                    “Crowdsourse term sheet fermium beta stealth responsive web
+                    design niche market rock star channels. Supply chain market
+                    graphical user interface assets.”
+                  </p>
+                </div>
+              </div>
+              <ol>
+                <li class="blog-single__describe-item">
+                  <p>
+                    Your wellness goals and the areas of preference, then unwind
+                    with a customized.
+                  </p>
+                </li>
+                <li class="blog-single__describe-item">
+                  <p>
+                    Discover better health & wellness by using our beautician
+                    ratings & reviews to make your choice.
+                  </p>
+                </li>
+                <li class="blog-single__describe-item">
+                  <p>
+                    Professionals team is trained to provide you with the care
+                    and support you need during this difficult time. We will fax
+                    the requested records directly to the Qualified Beautician.
+                  </p>
+                </li>
+                <li class="blog-single__describe-item">
+                  <p>
+                    We will fax the requested records directly to the Qualified
+                    Beautician.
+                  </p>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__social-box">
+          <a href="" class="footer__logo link">
+            <svg class="footer__logo-icon" width="65" height="65">
+              <use href="../images/icons.svg#icon-Logo_footer"></use>
+            </svg>
+            Beautyness
+          </a>
+          <ul class="footer__social list">
+            <li>
+              <a href="" class="footer__social-link link">
+                <svg class="social__icon" width="12" height="22">
+                  <use href="../images/icons.svg#icon-face_f"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" class="footer__social-link link">
+                <svg class="social__icon" width="18" height="22">
+                  <use href="../images/icons.svg#icon-twit_f"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" class="footer__social-link link">
+                <svg class="social__icon" width="16" height="22">
+                  <use href="../images/icons.svg#icon-in_f"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" class="footer__social-link link">
+                <svg class="social__icon" width="17" height="23">
+                  <use href="../images/icons.svg#icon-instagram_f"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="navigation">
+          <div class="footer-navigate">
+            <div class="box-explore">
+              <h3 class="footer-navigate__title">Explore</h3>
+              <ul class="footer-navigate__list list">
+                <li class="footer-navigate__item">
+                  <a href="../index.html" class="footer-navigate__link link"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a href="./about.html" class="footer-navigate__link link"
+                    >About Us</a
+                  >
+                </li>
+                <li>
+                  <a href="./services.html" class="footer-navigate__link link"
+                    >Services</a
+                  >
+                </li>
+                <li>
+                  <a href="" class="footer-navigate__link link">Appointments</a>
+                </li>
+                <li>
+                  <a href="./blog.html" class="footer-navigate__link link"
+                    >Blog</a
+                  >
+                </li>
+
+                <li>
+                  <a href="./contact.html" class="footer-navigate__link link"
+                    >Contact Us</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="box-utility">
+              <h3 class="footer-navigate__title">Utility Pages</h3>
+              <ul class="footer-navigate__list list">
+                <li>
+                  <a href="" class="footer-navigate__link link">Start here </a>
+                </li>
+                <li>
+                  <a href="" class="footer-navigate__link link">Style guide </a>
+                </li>
+                <li>
+                  <a href="./error.html" class="footer-navigate__link link"
+                    >404 not found</a
+                  >
+                </li>
+                <li>
+                  <a href="" class="footer-navigate__link link"
+                    >Password protected
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="footer-navigate__link link">Licenses </a>
+                </li>
+
+                <li>
+                  <a href="" class="footer-navigate__link link">Changelog</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="address-box">
+            <h3 class="footer-navigate__title">Keep in Touch</h3>
+            <address>
+              <table class="address">
+                <tr>
+                  <td rowspan="2" class="address__text">Address:</td>
+                  <td rowspan="2">
+                    <a
+                      href="https://www.google.com/maps/search/24A+Kingston+St,+Los+Vegas+NC+28202,+USA./@34.7063281,-105.9799531,5z/data=!3m1!4b1?entry=ttu"
+                      class="address__link link"
+                      >24A Kingston St, Los Vegas<br />
+                      NC 28202, USA.</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="address__text"></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td class="address__text">Mail :</td>
+                  <td>
+                    <a href="mailto:info@example.com" class="address__link link"
+                      >support@doctors.com</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="address__text">Phone :</td>
+                  <td>
+                    <a href="tel:+221234567900" class="address__link link"
+                      >(+22) 123 - 4567 - 900</a
+                    >
+                  </td>
+                </tr>
+              </table>
+            </address>
+          </div>
+          <div class="schedule">
+            <h3 class="footer-navigate__title">Working Hours</h3>
+            <ul class="footer-navigate__list list">
+              <li class="schedule__item">Mon to Fri: 7am - 6pm</li>
+              <li class="schedule__item">Sat: 9am - 7pm</li>
+              <li class="schedule__item">Sun: 9am - 6pm</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <h4 class="copyright">
+        &#169; Copyright 2021. Drafted by Victor Themes.
+      </h4>
+    </footer>
+  </body>
+</html>

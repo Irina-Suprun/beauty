@@ -1,48 +1,68 @@
 .price {
-    @include desktop {
-        text-align: center;
-    }
-}
-
-.price h3 {
-    margin-bottom: 40px;
-}
-
-.price__section {
     @include tablet {
         text-align: center;
     }
 
-    @include desktop {
-        display: flex;
-        justify-content: space-between;
-    }
-}
+    h3 {
+        margin-bottom: $spacing-secondary*3;
 
-.price__picture {
-    box-shadow: $shadow;
-
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-        margin: 0 auto;
+        @include desktop {
+            margin-bottom: $spacing-secondary*6;
+        }
     }
 
-    @include desktop {
-        margin: 0;
+    &__section {
+        margin-bottom: $spacing-secondary*3;
+
+        @include tablet {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0;
+        }
     }
-}
 
-.price__list {
-    padding-top: 30px;
-}
+    &__picture {
+        box-shadow: $shadow;
 
-.price__item {
-    padding-top: 18px;
-    padding-bottom: 22px;
-    border-bottom: $border-bottom-price;
-}
+        @include tablet {
+            margin: 0;
+            width: 50%;
+        }
+    }
 
-.price__item .title {
-    text-align: left;
+    &__list {
+        @include desktop {
+            padding-top: $spacing-secondary*6;
+        }
+    }
+
+    &__item {
+        padding-top: $spacing-secondary*2;
+        padding-bottom: $spacing-secondary*2;
+        border-bottom: $border-bottom-price;
+
+        @include desktop {
+            padding-top: $spacing-secondary*3;
+            padding-bottom: $spacing-secondary*4;
+        }
+
+        .title {
+            text-align: left;
+        }
+    }
+
+    &__box {
+        @include tablet {
+            text-align: left;
+        }
+
+        .button-link {
+
+            @media screen and (max-width: 1199px) {
+                margin-bottom: $spacing-secondary*4;
+            }
+        }
+    }
 }
 
 .text-span {
@@ -53,15 +73,14 @@
     color: $color-primary-text;
 }
 
-// .price__text {}
-
 .box-square {
-    @include desktop {
+    @include tablet {
         position: relative;
     }
 }
 
 .figure-square {
+
     @include desktop {
         position: absolute;
         top: -90px;
@@ -70,30 +89,19 @@
     }
 }
 
-.price__box {
-    @include desktop {
-        text-align: left;
-    }
-}
-
-.price__box .button-link {
-
-    @media screen and (max-width: 1199px) {
-        margin-bottom: 30px;
-    }
-}
-
 .padding-box-right {
-    @include desktop {
-        padding-left: 67px;
+    @include tablet {
+        padding-left: $spacing-secondary*3;
     }
 
+    @include desktop {
+        padding-left: $spacing-base*11;
+    }
 }
 
 .padding-box-left {
     @include desktop {
-        padding-top: 90px;
-        padding-right: 67px;
+        padding-top: $spacing-base*15;
+        padding-right: $spacing-base*11;
     }
-
 }

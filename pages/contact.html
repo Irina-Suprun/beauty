@@ -46,62 +46,81 @@
         <div class="right-side">
           <nav class="main-nav">
             <ul class="site-nav list">
-              <li>
+              <li class="site-nav__item">
                 <a href="../index.html" class="site-nav__link link">Home</a>
               </li>
-              <li> 
+              <li class="site-nav__item">
                 <div class="dropdown">
-                    <p class="site-nav__link accent">Pages</p>
-                    <ul class="dropdown-content list">
-                    <li class="dropdown-content__item"><a href="./services-single.html" class="site-nav__link link dropdown-content__link">Services-Single</a></li>
-                    <li class="dropdown-content__item"><a href="./team.html" class="site-nav__link link dropdown-content__link">Team</a></li>
-                    <li class="dropdown-content__item"><a href="./team-single.html" class="site-nav__link link dropdown-content__link">Team-Single</a></li>
-                    <li class="dropdown-content__item"><a href="./blog.html" class="site-nav__link link dropdown-content__link">Blog</a></li>
-                    <li class="dropdown-content__item"><a href="./blog-single.html" class="site-nav__link link dropdown-content__link">Blog-Single</a></li>
-                    <li class="dropdown-content__item"><a href="./locations.html" class="site-nav__link link dropdown-content__link">Locations</a></li>
-                    <li class="dropdown-content__item"><a href="./error.html" class="site-nav__link link dropdown-content__link">404</a></li>
-                    <li class="dropdown-content__item"><a href="./password-protected.html" class="site-nav__link link dropdown-content__link">Password-Protected</a></li>
-                </ul>
+                  <p class="site-nav__link">Pages</p>
+                  <ul class="dropdown-content list">
+                    <li class="dropdown-content__item">
+                      <a
+                        href="./services-single.html"
+                        class="link dropdown-content__link"
+                        >Services-Single</a
+                      >
+                    </li>
+                    <li class="dropdown-content__item">
+                      <a
+                        href="./team.html"
+                        class="link dropdown-content__link"
+                        >Team</a
+                      >
+                    </li>
+                    <li class="dropdown-content__item">
+                      <a
+                        href="./team-single.html"
+                        class="link dropdown-content__link"
+                        >Team-Single</a
+                      >
+                    </li>
+                    <li class="dropdown-content__item">
+                      <a
+                        href="./blog.html"
+                        class="link dropdown-content__link"
+                        >Blog</a
+                      >
+                    </li>
+                    <li class="dropdown-content__item">
+                      <a
+                        href="./blog-single.html"
+                        class="link dropdown-content__link"
+                        >Blog-Single</a
+                      >
+                    </li>
+                    <li class="dropdown-content__item">
+                      <a
+                        href="./locations.html"
+                        class="link dropdown-content__link"
+                        >Locations</a
+                      >
+                    </li>
+                    <li class="dropdown-content__item">
+                      <a
+                        href="./error.html"
+                        class="link dropdown-content__link"
+                        >404</a
+                      >
+                    </li>
+                    <li class="dropdown-content__item">
+                      <a
+                        href="./password-protected.html"
+                        class="link dropdown-content__link"
+                        >Password-Protected</a
+                      >
+                    </li>
+                  </ul>
                 </div>
-                <!-- <a href="" class="site-nav__link accent link">Pages</a> -->
-<!--                 
-<div class="navbar">
-  <a href="#home">Home</a>
-  <a href="#news">News</a>
-  <div class="dropdown">
-    <button class="dropbtn">Dropdown 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
-    </div>
-  </div> 
-</div> -->
-
-                <!-- <select class="site-nav__link">
-  <option>Pages</option>
-  <option> <a href="./services-single.html">Services-Single</a></option>
-  <option> <a href="./team.html">Team</a></option>
-  <option> <a href="./team-single.html">Team-Single</a></option>
-  <option> <a href="./blog.html">Blog</a></option>
-  <option> <a href="./blog-single.html">Blog-Single</a></option>
-  <option> <a href="./locations.html">Locations</a></option>
-  <option> <a href="./error.html">404</a></option>
-  <option> <a href="./password-protected.html">Password-Protected</a></option>
-</select> -->
-                <!-- <a href="" class="site-nav__link link">Pages</a> -->
               </li>
-              <li>
+              <li class="site-nav__item">
                 <a href="./about.html" class="site-nav__link link">About</a>
               </li>
-              <li>
+              <li class="site-nav__item">
                 <a href="./services.html" class="site-nav__link link"
                   >Services</a
                 >
               </li>
-              <li>
+              <li class="site-nav__item">
                 <a href="./contact.html" class="site-nav__link link">Contact</a>
               </li>
             </ul>
@@ -130,7 +149,7 @@
                 </a>
               </li>
             </ul>
-            <button type="button" class="button">
+            <button type="button" class="button header__button">
               <svg class="button__icon" width="13.5" height="15">
                 <use href="../images/icons.svg#icon-Icon-reservation"></use>
               </svg>
@@ -144,8 +163,8 @@
     <!-- MAIN -->
     <main>
       <!-- hero -->
-      <section class="about-hero contact__hero">
-        <div class="about-hero__container">
+      <section class="section hero">
+        <div class="container hero__container">
           <p class="hero-before-title">GET IN TOUCH WITH US</p>
           <h2 class="hero-title">We Are Ready To Assist You In 24x7</h2>
         </div>
@@ -156,7 +175,7 @@
         <div class="container visiting__box">
           <div class="visiting__picture visually-hidden">
             <img
-              src="../images/visitting-photo-min.jpg"
+              src="../images/visiting-photo-min.jpg"
               alt="photo"
               class="visiting__photo"
             />
@@ -169,7 +188,7 @@
               but the majority have suffered alteration in some form, buying to
               many desktop publishing packages.
             </p>
-            <ul class="visiting__list">
+            <ul class="visiting__list list">
               <li class="visiting__item">
                 <div class="visiting__icon">
                   <svg width="26" height="29">
@@ -178,7 +197,7 @@
                 </div>
                 <div class="visiting__contacts">
                   <h6 class="title">Visit Us :</h6>
-                  <p class="before-title">NO.09a, Downtown, SAN DIEGO, USA</p>
+                  <p class="before-title">NO.09a, SAN DIEGO, USA</p>
                 </div>
               </li>
               <li class="visiting__item">
@@ -214,7 +233,7 @@
           <div class="position">
             <p class="before-title">SCHEDULE YOUR PRESENCE</p>
             <h3 class="title">Make an Appointment</h3>
-            <p class="schedule__text">
+            <p class="schedules__text">
               There are many variations of passages of Lorem Ipsum available,
               but the majority have suffered alteration in some form.
             </p>
@@ -303,7 +322,7 @@
     <!-- FOOTER -->
     <footer class="footer">
       <div class="container">
-        <div class="social-box">
+        <div class="footer__social-box">
           <a href="" class="footer__logo link">
             <svg class="footer__logo-icon" width="65" height="65">
               <use href="../images/icons.svg#icon-Logo_footer"></use>

@@ -46,81 +46,81 @@
         <div class="right-side">
           <nav class="main-nav">
             <ul class="site-nav list">
-              <li>
+              <li class="site-nav__item">
                 <a href="../index.html" class="site-nav__link link">Home</a>
               </li>
-              <li>
-                 <div class="dropdown">
-                  <p class="site-nav__link accent">Pages</p>
+              <li class="site-nav__item">
+                <div class="dropdown">
+                  <p class="site-nav__link">Pages</p>
                   <ul class="dropdown-content list">
                     <li class="dropdown-content__item">
                       <a
                         href="./services-single.html"
-                        class="site-nav__link link dropdown-content__link"
+                        class="link dropdown-content__link"
                         >Services-Single</a
                       >
                     </li>
                     <li class="dropdown-content__item">
                       <a
                         href="./team.html"
-                        class="site-nav__link link dropdown-content__link"
+                        class="link dropdown-content__link"
                         >Team</a
                       >
                     </li>
                     <li class="dropdown-content__item">
                       <a
                         href="./team-single.html"
-                        class="site-nav__link link dropdown-content__link"
+                        class="link dropdown-content__link"
                         >Team-Single</a
                       >
                     </li>
                     <li class="dropdown-content__item">
                       <a
                         href="./blog.html"
-                        class="site-nav__link link dropdown-content__link"
+                        class="link dropdown-content__link"
                         >Blog</a
                       >
                     </li>
                     <li class="dropdown-content__item">
                       <a
                         href="./blog-single.html"
-                        class="site-nav__link link dropdown-content__link"
+                        class="link dropdown-content__link"
                         >Blog-Single</a
                       >
                     </li>
                     <li class="dropdown-content__item">
                       <a
                         href="./locations.html"
-                        class="site-nav__link link dropdown-content__link"
+                        class="link dropdown-content__link"
                         >Locations</a
                       >
                     </li>
                     <li class="dropdown-content__item">
                       <a
                         href="./error.html"
-                        class="site-nav__link link dropdown-content__link"
+                        class="link dropdown-content__link"
                         >404</a
                       >
                     </li>
                     <li class="dropdown-content__item">
                       <a
                         href="./password-protected.html"
-                        class="site-nav__link link dropdown-content__link"
+                        class="link dropdown-content__link"
                         >Password-Protected</a
                       >
                     </li>
                   </ul>
                 </div>
               </li>
-              <li>
+              <li class="site-nav__item">
                 <a href="./about.html" class="site-nav__link link">About</a>
               </li>
-              <li>
+              <li class="site-nav__item">
                 <a href="./services.html" class="site-nav__link link"
                   >Services</a
                 >
               </li>
-              <li>
+              <li class="site-nav__item">
                 <a href="./contact.html" class="site-nav__link link">Contact</a>
               </li>
             </ul>
@@ -149,7 +149,7 @@
                 </a>
               </li>
             </ul>
-            <button type="button" class="button">
+            <button type="button" class="button header__button">
               <svg class="button__icon" width="13.5" height="15">
                 <use href="../images/icons.svg#icon-Icon-reservation"></use>
               </svg>
@@ -163,8 +163,8 @@
     <!-- MAIN -->
     <main>
       <!-- hero -->
-      <section class="section about-hero">
-        <div class="about-hero__container">
+      <section class="section hero">
+        <div class="container hero__container">
           <p class="hero-before-title">SHORT STORY ABOUT US</p>
           <h2 class="hero-title">
             The big story behind, our beautyness center
@@ -234,7 +234,7 @@
       </section>
 
       <!-- ABOUT_US -->
-      <section class="about-us">
+      <section class="about-us section">
         <div class="container about-us__container">
           <div class="about-us__describe">
             <p class="hero-before-title">ABOUT US</p>
@@ -410,7 +410,7 @@
                   alt="photo"
                   class="customer__photo"
                 />
-                <div class="customer__name">
+                <div class="customer-name">
                   <ul class="stars-list list">
                     <li class="star-item">
                       <svg width="13" height="12">
@@ -442,8 +442,8 @@
                       </svg>
                     </li>
                   </ul>
-                  <h3 class="title customer-title">James Williams</h3>
-                  <p class="customer__country">United States</p>
+                  <h3 class="customer-title">James Williams</h3>
+                  <p class="customer-country">United States</p>
                 </div>
                 <svg width="70" height="55" class="reviews__icon">
                   <use href="../images/icons.svg#icon-lines"></use>
@@ -464,7 +464,7 @@
                   alt="photo"
                   class="customer__photo"
                 />
-                <div class="customer__name">
+                <div class="customer-name">
                   <ul class="stars-list list">
                     <li class="star-item">
                       <svg width="13" height="12">
@@ -497,7 +497,7 @@
                     </li>
                   </ul>
                   <h3 class="customer-title">Lieo Jessica</h3>
-                  <p class="customer__country">United Kingdom</p>
+                  <p class="customer-country">United Kingdom</p>
                 </div>
                 <svg width="70" height="55" class="reviews__icon">
                   <use href="../images/icons.svg#icon-lines"></use>
@@ -546,7 +546,9 @@
             </ul>
           </div>
           <div class="subscription__button">
-            <a href="" class="button make-reservation__button link">CONTACT US</a>
+            <a href="" class="button make-reservation__button link"
+              >CONTACT US</a
+            >
           </div>
         </div>
       </section>
@@ -555,7 +557,7 @@
     <!-- FOOTER -->
     <footer class="footer">
       <div class="container">
-        <div class="social-box">
+        <div class="footer__social-box">
           <a href="" class="footer__logo link">
             <svg class="footer__logo-icon" width="65" height="65">
               <use href="../images/icons.svg#icon-Logo_footer"></use>
@@ -599,7 +601,7 @@
               <h3 class="footer-navigate__title">Explore</h3>
               <ul class="footer-navigate__list list">
                 <li class="footer-navigate__item">
-                  <a href="./index.html" class="footer-navigate__link link"
+                  <a href="../index.html" class="footer-navigate__link link"
                     >Home</a
                   >
                 </li>

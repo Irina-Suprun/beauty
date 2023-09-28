@@ -5,16 +5,22 @@
     font-weight: 700;
     letter-spacing: -0.01em;
     text-align: center;
+
 }
+
 .before-title {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: $spacing-secondary*2;
+    padding-bottom: $spacing-secondary*2;
     font-weight: 600;
-    font-size: $font-size-m;
+    font-size: $font-size-s;
     line-height: 1.55;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: $color-2;
+
+    @include desktop {
+        font-size: $font-size-m;
+    }
 }
 
 h1 {
@@ -26,21 +32,43 @@ h1 {
     }
 }
 
-// h2 {
-//     font-size: $font-size-h2;
-//     font-family: $font-family-title;
-// }
 h3 {
-    font-size: $font-size-h3-desktop;
+    font-size: $font-size-h3;
+
+    @include desktop {
+        font-size: $font-size-h3-desktop;
+    }
 }
-// h4 {
-//     font-size: $font-size-h4;
-//     font-family: $font-family-title;
-// }
+
+h4 {
+    font-size: $font-size-h4;
+
+    @include desktop {
+        font-size: $font-size-h4-desktop;
+    }
+}
+
 h5 {
-    font-size: $font-size-h5-desktop;
+    font-size: $font-size-h5;
+
+    @include desktop {
+        font-size: $font-size-h5-desktop;
+    }
 }
+
 h6 {
-    font-size: $font-size-h6-desktop;
+    font-size: $font-size-h6;
     line-height: 1.2;
+
+    @include desktop {
+        font-size: $font-size-h6-desktop;
+    }
+}
+
+h7 {
+    font-size: $font-size-h7;
+
+    @include desktop {
+        font-size: $font-size-h7;
+    }
 }

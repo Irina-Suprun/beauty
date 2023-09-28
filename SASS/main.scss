@@ -4,10 +4,11 @@
 @import "./styles/variables";
 
 @import "./styles/components/variables";
+@import "./styles/components/hidden";
 @import "./styles/components/container";
 @import "./styles/components/title";
-@import "./styles/components/paragraph";
 @import "./styles/components/button";
+@import "./styles/components/form";
 
 @import "./styles/templates/variables";
 @import "./styles/templates/header";
@@ -24,21 +25,27 @@
 @import "./styles/sections/home/benefits";
 @import "./styles/sections/home/discount";
 @import "./styles/sections/home/blog";
-@import "./styles/sections/about/hero";
 @import "./styles/sections/about/values";
 @import "./styles/sections/about/about-us";
 @import "./styles/sections/about/experts";
 @import "./styles/sections/about/share-us";
 @import "./styles/sections/get-in-touch";
 @import "./styles/sections/schedule";
+@import "./styles/sections/about-service";
+@import "./styles/sections/membership-cards";
+@import "./styles/sections/appointment";
+@import "./styles/sections/single-expert";
+@import "./styles/sections/blog-single";
 
+body {
+    font-family: $font-family-text;
+    color: $color-primary-text;
+    font-weight: 400;
+    font-size: $font-size-m;
+    letter-spacing: 0.02em;
+    line-height: $line-height-text;
 
-
-// @import "./base/common";
-// @import "./components/container";
-// @import "./components/hidden";
-
-// @import "./layouts/heroError";
-// @import "./layouts/error-section";
-
-
+    @include desktop {
+        font-size: $font-size-l;
+    }
+}

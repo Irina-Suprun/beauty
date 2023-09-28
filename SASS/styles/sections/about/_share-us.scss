@@ -1,72 +1,69 @@
-// .subscription { 
-// }
+.subscription {
+    &__container {
+        margin-bottom: $spacing-secondary*3;
 
-.subscription__container {
-    margin-bottom: 30px;
+        @include tablet {
+            display: flex;
+            gap: 15px;
+        }
 
-    @include tablet {
+        @include desktop {
+            gap: 50px;
+            margin-bottom: $spacing-secondary*6;
+        }
+    }
+
+    &__describe {
+        margin-bottom: $spacing-secondary*3;
+
+        @include tablet {
+            max-width: 275px;
+        }
+
+        @include desktop {
+            margin-bottom: $spacing-secondary*6;
+            max-width: 504px;
+        }
+
+        .before-title,
+        .title {
+            @include tablet {
+                text-align: left;
+            }
+        }
+    }
+
+    &__text {
+        text-align: justify;
+        margin-bottom: $spacing-secondary*3;
+
+        @include desktop {
+            margin-bottom: $spacing-secondary*6;
+        }
+    }
+
+    &__image {
+        @include tablet {
+            width: auto;
+            height: 100%;
+        }
+    }
+
+    &__pictures {
         display: flex;
-        gap: 30px;
+        flex-wrap: wrap;
+        gap: 15px;
+
+        @include desktop {
+            gap: 45px;
+        }
     }
 
-    @include desktop {
-        gap: 50px;
-        margin-bottom: 60px;
+    &__button {
+        display: flex;
+
+        .make-reservation__button {
+            padding: $spacing-secondary*4 $spacing-secondary*14;
+        }
     }
-}
-
-.subscription__describe {
-    margin-bottom: 20px;
-
-    @include tablet {
-        max-width: 275px;
-    }
-
-    @include desktop {
-        margin-bottom: 55px;
-        max-width: 504px;
-    }
-}
-
-.subscription__describe .before-title,
-.subscription__describe .title {
-    @include tablet {
-        text-align: left;
-    }
-}
-
-.subscription__text {
-    text-align: justify;
-    margin-bottom: 20px;
-
-    @include tablet {}
-
-    @include desktop {
-        margin-bottom: 55px;
-    }
-}
-
-.subscription__image {
-    @include tablet {
-        width: auto;
-        height: 100%;
-    }
-}
-
-.subscription__pictures {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-
-    @include desktop {
-        gap: 45px;
-    }
-}
-
-.subscription__button {
-    display: flex;
-}
-
-.subscription__button .make-reservation__button {
-    padding: 23px 72px;
 }

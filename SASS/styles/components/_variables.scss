@@ -4,12 +4,15 @@
 $font-size-h1-desktop: 70px;
 $font-size-h1-mobile: 30px;
 $font-size-h2-desktop: 55px;
+$font-size-h3: 30px;
 $font-size-h3-desktop: 45px;
+$font-size-h4: 25px;
 $font-size-h4-desktop: 40px;
+$font-size-h5: 20px;
 $font-size-h5-desktop: 26px;
+$font-size-h6: 16px;
 $font-size-h6-desktop: 22px;
-$font-size-h6-tablet: 18px;
-
+$font-size-h7: 16px;
 
 $color-title: #141414;
 
@@ -21,4 +24,6 @@ $color-border: $color-2;
 
 $bg-color-button: $color-3;
 
+// FORM
+$border-form: solid 1px $color-2;
 

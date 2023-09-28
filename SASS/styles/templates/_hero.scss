@@ -1,12 +1,23 @@
 .hero {
+    background-color: $bg-color-hero;
+    background-image: url(../images/about-hero-bg-min.jpg);
+    text-align: center;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     margin: 0 auto;
     height: auto;
     width: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
+
+    &__container {
+        @include tablet {
+            max-width: 450px;
+        }
+
+        @include desktop {
+            max-width: 650px;
+        }
+    }
 }
 
 .hero-before-title {
@@ -15,11 +26,12 @@
     line-height: 1.55;
     letter-spacing: 0.1em;
     color: $color-white;
+    text-transform: uppercase;
 }
 
 .hero-title {
-    margin-top: 10px;
-    margin-bottom: 30px;
+    margin-top: $spacing-secondary*3;
+    margin-bottom: $spacing-secondary*3;
     font-family: $font-family-title;
     font-weight: 700;
     font-size: $font-size-h1-mobile;
@@ -29,6 +41,6 @@
 
     @include desktop {
         font-size: $font-size-h2-desktop;
+        margin-bottom: $spacing-secondary*6;
     }
 }
-

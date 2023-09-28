@@ -1,65 +1,75 @@
 .blog {
     text-align: center;
-}
 
-.blog .before-title {
-    text-align: center;
-}
-
-.blog__list {
-    @include tablet {
-        display: flex;
-        gap: 10px;
-        flex-wrap: wrap;
-        margin-bottom: 30px;
+    .before-title {
+        text-align: left;
     }
 
-    @include desktop {
-        gap: 45px;
-        margin-bottom: 60px;
+    &__list {
+        margin-top: $spacing-secondary*3;
+
+        @include tablet {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: $spacing-secondary*3;
+        }
+
+        @include desktop {
+            gap: 45px;
+            margin-bottom: $spacing-secondary*12;
+        }
     }
-}
 
-.blog__item {
-    background-color: $bg-color-blog-items;
-    margin-bottom: 30px;
-
-    @include tablet {
-        margin-bottom: 0;
-        width: calc((100% - 20px) / 2);
+    &__list:first-child {
+        margin-top: 0;
     }
 
-    @include desktop {
-        width: calc((100% - 90px) / 3);
+    &__item {
+        background-color: $bg-color-blog-items;
+        margin-bottom: $spacing-secondary*3;
+
+        @include tablet {
+            margin-bottom: 0;
+            width: calc((100% - 20px) / 2);
+        }
+
+        @include desktop {
+            width: calc((100% - 90px) / 3);
+        }
     }
-}
 
-.blog__picture {
-    width: 100%;
-    height: auto;
-}
+    &__picture {
+        width: 100%;
+        height: auto;
+    }
 
-.blog__text {
-    padding: 25px 30px;
-    text-align: left;
-}
+    &__text {
+        padding: $spacing-secondary*3;
+        text-align: left;
+    }
 
-.blog__pre-title {
-    margin-bottom: 8px;
-    text-align: center;
-    font-weight: 800;
-    font-size: 13px;
-    line-height: $line-height-base;
-    letter-spacing: 0.06em;
-    color: $color-2;
-}
+    &__pre-title {
+        margin-bottom: $spacing-secondary*2;
+        text-align: left;
+        font-weight: 800;
+        font-size: 13px;
+        line-height: $line-height-base;
+        letter-spacing: 0.06em;
+        color: $color-2;
+    }
 
-// .blog__title {}
+    .title {
+        text-align: left;
+    }
 
-.blog__describe {
-    margin-top: 15px;
-}
+    &__describe {
+        text-align: justify;
+        margin-top: $spacing-secondary*3;
+    }
 
-.blog__link {
-    margin-top: 0;
+    &__link {
+        margin-top: 0;
+
+    }
 }

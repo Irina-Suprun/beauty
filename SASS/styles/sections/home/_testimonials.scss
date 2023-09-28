@@ -1,70 +1,76 @@
 .reviews {
     background-color: $bg-color-section;
+
+    &__list {
+        @include tablet {
+            display: flex;
+            gap: 36px;
+            margin-top: $spacing-secondary*3;
+        }
+
+        @include desktop {
+            margin-top: $spacing-secondary*6;
+        }
+    }
+
+    &__item {
+        @media screen and (max-width:767px) {
+            margin-bottom: $spacing-secondary*3;
+        }
+                @include desktop {
+                    margin-bottom: $spacing-secondary*6;
+                }
+    }
+
+    &__text {
+        padding: $spacing-secondary*3;
+        text-align: justify;
+        background-color: $bg-color-base;
+
+        @include desktop {
+            padding: $spacing-secondary*9;
+        }
+    }
+
+    &__customer {
+        padding: $spacing-secondary*3;
+        background-color: $bg-color-dark;
+        display: flex;
+
+        @include desktop {
+            padding: $spacing-secondary*5 $spacing-secondary*9;
+        }
+    }
+
+    &__icon {
+        margin-right: 0;
+        margin-left: auto;
+    }
+
+    .title {
+        margin-bottom: $spacing-secondary*3;
+    }
 }
 
 .before-title--centre {
     text-align: center;
 }
 
-.reviews__list {
-    @include tablet {
-        display: flex;
-        gap: 36px;
-        margin-top: 40px;
-    }
-
-}
-
-.reviews__item {
-    @media screen and (max-width:767px) {
-        margin-bottom: 36px;
-    }
-}
-
-.reviews__text {
-    padding: 20px;
-    text-align: justify;
-    background-color: $bg-color-base;
-
-    @include desktop {
-        padding: 45px;
-    }
-}
-
-.reviews__customer {
-    padding: 20px;
-    background-color: $bg-color-dark;
-    display: flex;
-
-    @include desktop {
-        padding: 25px 44px 25px 44px;
-    }
-}
-
-// .customer__photo {}
-
-.customer__name {
-    margin-left: 20px;
+.customer-name {
+    margin-left: $spacing-secondary*3;
 }
 
 .stars-list {
     display: flex;
 }
 
-// .star-item {}
-
 .customer-title {
-    font-size: 20px;
+    font-size: $spacing-secondary*3;
     line-height: 1.60;
     color: $color-white;
 }
 
-.customer__country {
+.customer-country {
     font-size: $font-size-s;
     color: $color-white;
-}
-
-.reviews__icon {
-    margin-right: 0;
-    margin-left: auto;
 }

@@ -1,67 +1,62 @@
 .footer {
-    padding-top: 20px;
+    padding-top: $spacing-secondary*4;
     background-color: $bg-color-dark;
 
     @include tablet {
-        padding-top: 60px;
+        padding-top: $spacing-secondary*12;
     }
-}
 
-.footer .container {
-    padding-top: 0;
-    padding-bottom: 0;
-
-    @include desktop {
+    .container {
         padding-top: 0;
         padding-bottom: 0;
     }
-}
 
-.social-box {
-    padding-bottom: 20px;
-    border-bottom: $border-bottom-footer;
-
-    @include tablet {
-        padding-bottom: 50px;
+    &__logo {
         display: flex;
-        justify-content: space-between;
+        align-items: center;
+        font-family: $font-family-logo;
+        font-weight: 700;
+        font-size: $font-size-logo-footer;
+        line-height: $line-height-base;
+        letter-spacing: 0.02em;
+        color: $color-white;
+    }
+
+    &__logo-icon {
+        margin-right: $spacing-secondary*3;
+    }
+
+    &__social-box {
+        padding-bottom: $spacing-secondary*4;
+        border-bottom: $border-bottom-footer;
+
+        @include tablet {
+            padding-bottom: $spacing-secondary*10;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &__social {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__social-link {
+        width: 53px;
+        height: 53px;
+        border: $border-social-link-footer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
-.footer__logo {
-    display: flex;
-    align-items: center;
-    font-family: $font-family-logo;
-    font-weight: 700;
-    font-size: $font-size-logo-footer;
-    line-height: $line-height-base;
-    letter-spacing: 0.02em;
-    color: $color-white;
-}
-
-.footer__logo-icon {
-    margin-right: 17px;
-}
-
-.footer__social {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-}
-
-.footer__social-link {
-    width: 53px;
-    height: 53px;
-    border: $border-social-link-footer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .navigation {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: $spacing-secondary*3;
+    padding-bottom: $spacing-secondary*3;
 
     @include tablet {
         display: flex;
@@ -69,8 +64,8 @@
     }
 
     @include desktop {
-        padding-top: 50px;
-        padding-bottom: 60px;
+        padding-top: $spacing-secondary*10;
+        padding-bottom: $spacing-secondary*12;
     }
 }
 
@@ -92,87 +87,79 @@
         gap: 150px;
     }
 
-}
-
-.footer-navigate__title {
-    margin-bottom: 15px;
-    font-weight: 700;
-    font-size: $font-size-h6-desktop;
-    line-height: $line-height-title;
-    color: $color-white;
-
-    @include tablet {
-        font-size: $font-size-h6-tablet;
-    }
-
-    @include desktop {
+    &__title {
+        margin-bottom: $spacing-secondary*3;
+        font-weight: 700;
         font-size: $font-size-h6-desktop;
-        margin-bottom: 20px;
+        line-height: $line-height-title;
+        color: $color-white;
+
+        @include tablet {
+            font-size: $font-size-h6;
+        }
+
+        @include desktop {
+            font-size: $font-size-h6-desktop;
+            margin-bottom: $spacing-secondary*4;
+        }
     }
-}
 
-// .footer-navigate__list {}
-// .footer-navigate__item {}
-
-.footer-navigate__link {
-    font-family: $font-family-text;
-    font-weight: 500;
-    font-size: $font-size-m;
-    line-height: 1.5;
-    letter-spacing: -0.01em;
-    color: $color-white;
-
-    @include tablet {
+    &__link {
+        font-family: $font-family-text;
+        font-weight: 500;
         font-size: $font-size-m;
-    }
+        line-height: 1.5;
+        letter-spacing: -0.01em;
+        color: $color-white;
 
-    @include desktop {
-        font-size: $font-size-l;
-        line-height: 2;
+        @include tablet {
+            font-size: $font-size-m;
+        }
+
+        @include desktop {
+            font-size: $font-size-l;
+            line-height: 2;
+        }
     }
 }
-
-// .box-explore {}
-
-// .box-utility {}
 
 .address-box {
     text-align: center;
 
     @media screen and (max-width: 767px) {
-        margin-bottom: 20px;
+        margin-bottom: $spacing-secondary*4;
     }
 }
 
 .address {
     margin-left: auto;
     margin-right: auto;
-}
 
-.address__text {
-    display: flex;
-    font-weight: 700;
-    font-size: $font-size-m;
-    line-height: 1.5;
-    letter-spacing: -0.01em;
-    color: $color-white;
+    &__text {
+        display: flex;
+        font-weight: 700;
+        font-size: $font-size-m;
+        line-height: 1.5;
+        letter-spacing: -0.01em;
+        color: $color-white;
 
-    @include desktop {
-        font-size: $font-size-l;
+        @include desktop {
+            font-size: $font-size-l;
+        }
     }
-}
 
-.address__link {
-    display: flex;
-    align-items: start;
-    font-weight: 500;
-    font-size: $font-size-m;
-    line-height: 1.5;
-    letter-spacing: -0.01em;
-    color: $color-white;
+    &__link {
+        display: flex;
+        align-items: start;
+        font-weight: 500;
+        font-size: $font-size-m;
+        line-height: 1.5;
+        letter-spacing: -0.01em;
+        color: $color-white;
 
-    @include desktop {
-        font-size: $font-size-l;
+        @include desktop {
+            font-size: $font-size-l;
+        }
     }
 }
 
@@ -180,19 +167,19 @@
     text-align: center;
 
     @media screen and (max-width: 767px) {
-        margin-bottom: 20px;
+        margin-bottom: $spacing-secondary*4;
     }
-}
 
-.schedule__item {
-    font-weight: 500;
-    font-size: $font-size-m;
-    line-height: 2;
-    letter-spacing: -0.01em;
-    color: $color-white;
+    &__item {
+        font-weight: 500;
+        font-size: $font-size-m;
+        line-height: 2;
+        letter-spacing: -0.01em;
+        color: $color-white;
 
-    @include desktop {
-        font-size: $font-size-l;
+        @include desktop {
+            font-size: $font-size-l;
+        }
     }
 }
 

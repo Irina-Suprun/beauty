@@ -1,0 +1,86 @@
+.about-service {
+    background-color: $bg-color-section;
+
+    @include desktop {
+        position: relative;
+    }
+
+    .container {
+        @include desktop {
+            display: flex;
+            gap: 30px;
+        }
+    }
+
+    .title {
+        text-align: justify;
+    }
+
+    &__content {
+        @include desktop {
+            max-width: calc((100% - 30px) / 2);
+        }
+    }
+
+    &__text {
+        margin-top: $spacing-secondary*3;
+        margin-bottom: $spacing-secondary*3;
+        text-align: justify;
+
+        @include desktop {
+            margin-top: $spacing-secondary*6;
+            margin-bottom: $spacing-secondary*6;
+        }
+    }
+
+    &__list {
+        margin-top: $spacing-secondary*3;
+
+        @include desktop {
+            margin-top: $spacing-secondary*6;
+        }
+    }
+
+    &__item {
+        display: flex;
+        gap: 15px;
+        margin-bottom: $spacing-secondary*3;
+
+        @include desktop {
+            gap: 30px;
+        }
+    }
+
+    &__item-content {
+
+        .title {
+            text-align: justify;
+            font-family: $font-family-text;
+            line-height: 2;
+        }
+    }
+
+    &__video {
+        position: relative;
+
+        @include desktop {
+            position: absolute;
+            top: 120px;
+            right: 0;
+            max-width: calc((100% - 50px) / 2);
+        }
+    }
+
+    &__picture {
+        @include desktop {
+            height: 100%;
+        }
+    }
+
+    &__icon-play {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
