@@ -40,6 +40,14 @@ h3 {
     }
 }
 
+h4 {
+    font-size: $font-size-h4;
+
+    @include desktop {
+        font-size: $font-size-h4-desktop;
+    }
+}
+
 h5 {
     font-size: $font-size-h5;
 
@@ -54,5 +62,13 @@ h6 {
 
     @include desktop {
         font-size: $font-size-h6-desktop;
+    }
+}
+
+h7 {
+    font-size: $font-size-h7;
+
+    @include desktop {
+        font-size: $font-size-h7;
     }
 }
